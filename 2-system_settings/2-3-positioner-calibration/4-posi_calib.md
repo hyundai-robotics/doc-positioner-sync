@@ -39,6 +39,8 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
   </tbody>
 </table>
 
+
+### 사용 예
 ```python
           # 포지셔너 캘리브레이션용 프로그램(9995.job)
      S1   move P,spd=100%,accu=1,tool=0 # 포지셔너 캘리브레이션 교시
