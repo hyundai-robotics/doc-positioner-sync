@@ -11,6 +11,7 @@
     * [2.3.1 1축 포지셔너 캘리브레이션 프로그램 교시](2-system_settings/2-3-positioner-calibration/1-1axis-positioner-calibration-teaching.md)
     * [2.3.2 2축 포지셔너 캘리브레이션 프로그램 교시](2-system_settings/2-3-positioner-calibration/2-2axis-positioner-calibration-teaching.md)
     * [2.3.3 포지셔너 캘리브레이션 실행](2-system_settings/2-3-positioner-calibration/3-positioner-calibration-execution.md)
+    * [2.3.4 posi_calib](2-system_settings/2-3-positioner-calibration/4-posi_calib.md)
 * [3. 수동 조작](3-manual-operation/README.md)
   * [3.1 포지셔너 단독 조그 모드](3-manual-operation/3-1-positioner-independent-jog-mode.md)
   * [3.2 포지셔너 동기 조그 모드](3-manual-operation/3-2-positioner-sync-jog-mode.md)
