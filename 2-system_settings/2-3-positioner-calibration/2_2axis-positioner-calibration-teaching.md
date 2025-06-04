@@ -1,14 +1,20 @@
-﻿# 2.3.2 2축 포지셔너 캘리브레이션 프로그램 교시
+﻿# 2.3.2 Teaching the 2-Axis Positioner Calibration Program
 
-1.	교시할 프로그램을 선택합니다.
-2.	뾰족한 티칭점을 가능한 회전 중심과 멀리 설치합니다.
-3.	2축 포지셔너의 경우에는 1축 포지셔너와 마찬가지로 두번째 축만 움직여 3점을 우선 교시합니다. 이 후에 3번째 교시점(S3)에서 첫번째 축만 이동하여 4번째 점과(S4) 5번째 점을(S5) 교시합니다. 직동 포지셔너의 경우 두번째 축에 대해 2점 교시 후 첫번째 축에 대해 이동 후 한점을 교시합니다. 
-4.	교시를 할 때에는 로봇의 자세는 가능하면 변경하지 않고 교시하면 정확한 캘리브레이션이 됩니다.
+
+1. Select the program to be taught.
+
+2. Place the pointed teaching point as far as possible from the rotation center.
+
+3. For a 2-axis positioner, similar to the 1-axis positioner, first move only the 2-Axis and teach three points.
+  Then, from the 3rd teaching point(S3), move only the 1-Axis to teach the 4th(S4) and 5th(S5) points.
+  For a linear positioner, teach two points on the 2-Axis, then move the 1-Axis and teach one point.
+
+4. When teaching, try to keep the robot’s pose consistent.
 
 <!-- ![](../../_assets/image10.png) -->
 
 <p align="center">
  <img src="../../_assets/2_3_2.png" width="70%"></img>
- <em><p align="center">그림 2.3.2. 2축 포지셔너 캘리브레이션 교시 방법</p></em>
+ <em><p align="center">Figure 2.3.2. Teaching the 2-Axis Positioner Calibration</p></em>
 </p>   
 </br>

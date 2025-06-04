@@ -1,14 +1,14 @@
-﻿# 3.1 포지셔너 단독 조그 모드
-단독 조그 방법은 티칭 펜던트의 ‘메커니즘’키를 누르면 해당 메커니즘으로 토글되어 선택이 변경됩니다. 아래와 같은 상태에서 포지셔너는 단독으로 조그됩니다.
+﻿# 3.1 Positioner Independent Jog Mode
+
+The independent jog mode is toggled by pressing the "mech." key on the teach pendant. When set to this mode, the positioner can be jogged independently as shown below.
 
 <!-- ![](../_assets/image13.png) -->
 <p align="center">
- <img src="../_assets/3_1_1.png" width="60%"></img>
- <em><p align="center">그림 3.1.1. 포지셔너 단독 조그 방법</p></em>
+ <img src="../_assets/3_1_1_en.png" width="60%"></img>
+ <em><p align="center">Figure 3.1.1. Positioner Independent Jog method</p></em>
 </p>   
 </br>
 
-
-- 포지셔너 메커니즘: J7+J8
-- 좌표계: 축 좌표계(단독 조그)
-- 기록 조건: 일반 move 명령
+- Positioner mechanism: J7 + J8
+- Coordinate system: Axis coordinate system (independent jog)
+- Recording condition: General move command

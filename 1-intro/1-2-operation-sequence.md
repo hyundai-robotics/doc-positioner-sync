@@ -1,8 +1,8 @@
-﻿# 1.2 조작 순서
+﻿# 1.2 Operation Order
 
 
 <p align="center">
- <img src="../_assets/1_2_1.png" width="60%"></img>
- <em><p align="center">그림 1.2.1. 조작 순서</p></em>
+ <img src="../_assets/1_2_1_en.png" width="60%"></img>
+ <em><p align="center">Figure 1.2.1. Operation order</p></em>
 </p>   
 </br>

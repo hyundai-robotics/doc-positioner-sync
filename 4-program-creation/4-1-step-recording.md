@@ -1,3 +1,5 @@
-﻿# 4.1 스텝 기록
-- 포지셔너 단독 조그 동작에서는 프로그램 기록 조건이 move 명령으로 설정됩니다. 
-- 포지셔너 동기 조그 동작에는 기록조건이 smov 명령으로 설정되어 포지셔너 동기 명령을 지원합니다.
+﻿# 4.1 Step Recording
+
+- In positioner independent jog mode, the program recording condition is set to the move command.
+- In positioner synchronized jog mode, the recording condition is set to the smov command to support positioner synchronized commands.
+

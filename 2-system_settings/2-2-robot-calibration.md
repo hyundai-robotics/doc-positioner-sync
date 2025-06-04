@@ -1,3 +1,3 @@
-﻿# 2.2 로봇 캘리브레이션
+﻿# 2.2 Robot Calibration
 
-[**Hi6 로봇제어기 조작설명서 7.7장 자동 캘리브레이션**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-setting/7-auto-calibration/README)을 참고하십시오.
+Please refer to the following: [**Hi6 Robot Controller Operation Manual 7.7 Auto Calibration**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/7-auto-calibration/README)

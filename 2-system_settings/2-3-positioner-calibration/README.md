@@ -1,9 +1,13 @@
-﻿# 2.3 포지셔너 캘리브레이션
-  
-- 포지셔너 캘리브레이션은 로봇의 TCP 위치를 이용하여 포지셔너의 위치와 동작 방향에 대한 정보를 자동으로 계산하는 기능 입니다. 따라서, 포지셔너 캘리브레이션을 수행하기 위해서 로봇의 TCP 위치가 정확하게 입력되어 있어야 정확한 결과를 얻을 수 있습니다. 이를 위한 사전 작업으로 “축원점 및 툴길이 최적화” 기능을 활용할 수 있습니다. 
+﻿# 2.3 Positioner Calibration
 
-- 포지셔너 캘리브레이션을 사용하기 위해서는 포지셔너축에 대해서 그룹번호가 지정되어 있어야 합니다. 포지셔너 그룹은 최대 2축으로 구성 가능하며 회전-회전 또는 직동-직동 으로 구성될 수 있습니다. 
+- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot’s TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot’s TCP pose must be input precisely. As a preliminary step, the “[System > 6: Auto Calibration > Optimize axis origin and tool length]” function can be utilized.
 
-- 포지셔너 캘리브레이션의 기본적인 원리는 포지셔너가 회전 축으로 구성된 경우 교시된 3점의 위치로부터 원을 구성하여 회전축의 위치를 계산하는 방식입니다. 따라서 회전축의 중심을 계산하기 위해서는 축 별로 3점의 교시점이 필요합니다. 회전축으로 구성된 2축 포지셔너의 경우 가운데 한 점을 공통으로 활용하여 총 5점의 교시점을 활용하여 각각의 회전축의 위치와 방향을 계산 할 수 있습니다. 직동축으로 구성된 포지셔너의 경우는 포지셔너의 축 방향만을 계산하기 때문에 축별로 2점의 교시점이 필요하며, 2축으로 구성된 경우에는 가운데 점을 공통으로 활용하여 총 3점의 교시점으로부터 각각의 축 동작 방향을 계산하게 됩니다. 
+- To use positioner calibration, a group number must be assigned to the positioner axis. A positioner group can consist of up to 2-axes, which can be configured as either rotary-rotary or linear-linear.
 
-- 프로그램 교시 후 설정화면에서 수행하거나 posi_calib 프로시져를 통해 포지셔너 캘리브레이션을 계산할 수 있습니다.
+- The basic principle of positioner calibration is that, for positioners composed of rotary axes, the positions of three taught points are used to form a circle to calculate the position of the rotation axis.
+  Therefore, three taught points per axis are required to calculate the center of each rotary axis.
+  In the case of a two-axis positioner with rotary axes, a common middle point is used, totaling five taught points, to calculate the position and direction of each rotation axis.
+  For positioners composed of linear axes, since only the axis direction is calculated, two taught points per axis are required.
+  For a two-axis linear positioner, the middle point is shared, and the direction of each axis is calculated from three taught points.
+
+- After program teaching, positioner calibration can be performed from the settings screen or by executing the ```posi_calib``` procedure.

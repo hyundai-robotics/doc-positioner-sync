@@ -1,93 +1,101 @@
-﻿# 4.3 포지셔너 상의 직선보간 교시 예시
+﻿# 4.3 Example of Teaching Linear Interpolation on the Positioner
 
-1. 대상물 위에 시작점 및 목표점을 결정합니다.
+1. Determine the start and target points on the workpiece.
 
 <!-- ![](../_assets/image15.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    그림 4.1.1. 과정 1
+    Figure 4.1.1. Step 1
   </em>
 </p>
 <br/>
 
-2. 메커니즘 키와 좌표계를 이용하여 포지셔너를 선택하여 포지셔너를 이동시킨 후, 다시 메커니즘키로 로봇을 선택하여 시작점에 로봇 툴 끝을 원하는 시작점에 일치시킵니다. 이 상태에서 기록키를 눌러 ‘move’명령을 기록합니다(필요에 따라 smov로 기록하십시오).
+2. Using the Mechanism keys and Coordinate System, select the positioner and move it. Then, switch back to the robot using the Mechanism key and align the robot tool tip to the desired start point. In this state, press the "기록(record)" key to record a move command (use smov if necessary).
 
-3. 메커니즘 키와 좌표계 키를 이용하여 포지셔너 동기 조그 모드로 설정합니다. 현재 작업하는 포지셔너가 스테이션 1일 경우 좌표계가 ‘동기 S1’이 되도록 선택합니다.
+3. Use the Mechanism key and Coordinate System to set the mode to positioner synchronized jog. If the positioner being used is Station 1, select the coordinate system as "sync. S1".
 
 <!-- ![](../_assets/image16.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    그림 4.1.2. 과정 2~3
+    Figure 4.1.2. Step 2~3
   </em>
 </p>
 <br/>
 
-4. 마스터를 선택한 상태에서 포지셔너의 위치를 희망하는 위치로 변경하면, 로봇은 포지셔너 위의 작업 시작점을 따라 자세와 위치가 유지됩니다.
+4. While the master is selected, if you move the positioner to the desired position, the robot will maintain its position and orientation relative to the working start point on the positioner.
 
 <!-- ![](../_assets/image17.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    그림 4.1.3. 과정 4
+    Figure 4.1.3. Step 4
   </em>
 </p>
 <br/>
 
-5. (참고) 상기 상태에서 포지셔너 위의 한 점과 로봇 툴 끝의 오차는 로봇과 포지셔너의 캘리브레이션에 기인하는 오차이며, 이 오차가 재생시의 궤적오차로 나타나지는 않습니다. 즉, 어느 정도 오차량이 있을 지라도 로봇을 다시 움직여 목표위치로 로봇을 움직이고 “smov”로 기록하면, 재생시의 스텝의 궤적위치 오차는 거의 발생하지 않습니다.
+5. (Note) The error between a point on the positioner and the robot tool tip in this state is due to calibration errors between the robot and positioner. However, this error does not appear as a trajectory error during playback. In other words, even if some error exists, moving the robot again to the target position and recording with smov will result in minimal trajectory position errors during playback.
 
-6. 메커니즘을 다시 로봇으로 선택한 다음, Jog키로 로봇을 ‘목표점’(S2)까지 이동하여 일치시킵니다.
+6. Switch the mechanism back to the robot, then use the jog key to move the robot to the target point (S2) and align it.
 
 <!-- ![](../_assets/image18.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    그림 4.1.4. 과정 6
+    Figure 4.1.4. Step 6
   </em>
 </p>
 <br/>
 
-7. 동기스텝(smov)을 기록하기 위해 다시 포지셔너 동기 조그 모드로 설정하여 좌표계가 ‘동기 S1’이 되도록 선택하고 [기록]키를 눌러서 “smov” 스텝을 기록합니다. 
+7. To record the synchronized step (smov), set the mode back to positioner synchronized jog and select the coordinate system as Synchronized S1, then press the "기록(record)" key to record the smov step.
 
-8. 이후의 스텝도 ③→④→⑤의 과정을 따릅니다.
+8. Follow steps ③→④→⑤ for subsequent steps.
 
 <!-- ![](../_assets/image19.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    그림 4.1.5. 과정 7~8
+    Figure 4.1.5. Step 7~8
   </em>
 </p>
 <br/>
 
 
-9. 기록된 프로그램을 실행하면, 포지셔너가 이동하고 로봇은 포지셔너 위의 작업물에 대해 직선 보간으로 이동합니다.
+9. When the recorded program is executed, the positioner moves and the robot performs linear interpolation relative to the workpiece on the positioner.
 
 <!-- ![](../_assets/image20.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
   <em style="display: block; text-align: center; width: 50%; auto;">
-    그림 4.1.6. 과정 9
+    Figure 4.1.6. Step 9
   </em>
 </p>
 <br/>
 
 
-[**주의사항**]
-1) 포지셔너 동기스텝(smov)의 기록은 반드시 위와 같은 방법으로 해야하는 것은 아닙니다. 로봇과 포지셔너를 단독으로 움직여 위치와 자세를 결정한 후 smov 스텝으로 기록하면 로봇은 포지셔너의 작업물 위에서 지정된 보간 방식으로 움직입니다.
-2) smov 기록된 두 스텝의 보간방식이 둘 다 “L”인 경우 move에서와 같이 코너링 모션을 합니다.
-3) smov로 기록된 스텝의 속도는 작업속도입니다. 따라서 포지셔너를 많이 움직였을 지라도 작업물위에 기록된 스텝간의 작업거리가 매우 짧으면 포지셔너이 작업속도가 거의 ∞(무한대)가 되므로 포지셔너가 최고속으로 움직이게 됩니다. 이와 같은 경우 포지셔너의 속도를 제한하고자 할 경우에는 속도 단위를 “SEC”로 설정하면 됩니다. 이 의미는 스텝을 이동하는 단위가 속도가 아닌 시간으로 설정하기 때문에 작업물상의 작업거리가 0일지라도 이동시간이 지정되기 때문입니다.
+[**Caution**]
+1) Recording positioner synchronized steps (smov) does not necessarily have to follow the exact method described above.
+  You can move the robot and positioner independently to set the position and orientation, then record the step as smov.
+  The robot will move according to the specified interpolation method relative to the workpiece on the positioner.
+
+2) If two consecutive smov steps both use linear interpolation (“L”), cornering motion will be performed just like with move commands.
+
+3) The speed set in smov steps is the working speed.
+  Therefore, even if the positioner moves a lot, if the working distance between recorded steps on the workpiece is very short, the positioner’s working speed may effectively become infinite(∞), causing it to move at its maximum speed.
+  To limit the positioner speed in such cases, set the speed unit to “SEC”.
+  This means the step movement is based on time, not speed, so even if the distance on the workpiece is zero(0), the move time is specified.
 <br/><br/>
- 
-[**프로그램 작성 예시**]
+
+
+[**Example of Programming**]
 ```py
 
-    S1   move  L,spd=60%,accu=1,tool=0		# 시작 위치 접근 스텝
-    S2   smov  S1,L,spd=100mm/s,accu=1,tool=0	# 포지셔너 동기 직선 보간
+    S1   move  L,spd=60%,accu=1,tool=0        # Approach start position step
+    S2   smov  S1,L,spd=100mm/s,accu=1,tool=0    # Positioner synchronized linear interpolation
     S3   smov  S1,L,spd=100mm/s,accu=1,tool=0
     S4   smov  S1,L,spd=100mm/s,accu=1,tool=0
-    S5   move  P,spd=10%,accu=1,tool=0		# 퇴피 스텝(포지셔너와 비동기)
+    S5   move  P,spd=10%,accu=1,tool=0        # Retract step (asynchronous with positioner)
     S6   move  L,spd=200mm/s,accu=1,tool=0 
     end
 

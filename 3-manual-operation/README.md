@@ -1,3 +1,5 @@
-﻿# 3. 수동 조작
+﻿# 3. Manual Operation
 
-포지셔너를 조그하는 방법은 포지셔너만 조그하는 ‘단독 조그 방법’과 포지셔너를 조그하여 움직였을 때 로봇이 동기화 하여 따라오도록 하는 ‘동기 조그 방법’ 두가지 방법이 있습니다.
+There are two ways to jog the positioner:  <br/>
+- Independent Jog: Jogging the positioner alone.
+- Synchronized Jog: Jogging the positioner while the robot moves synchronously to follow it.

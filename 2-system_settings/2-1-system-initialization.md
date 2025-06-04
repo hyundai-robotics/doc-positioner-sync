@@ -1,97 +1,101 @@
-﻿# 2.1 시스템 초기화
+﻿# 2.1 System Initialization
 
-1. 제어기를 처음으로 설정하는 경우에는 시스템 초기화를 수행합니다.
-  [**시스템 > 초기화 > 시스템 초기화**]를 선택하고 초기화 버튼을 누릅니다.
+1. When setting up the controller for the first time, perform a system initialization.
+  navigate to [**System > 5: Initialization > 1: System format**] and press the initialize button.
 
 <!-- ![](../_assets/2_1_1.png) -->
 <p align="center">
- <img src="../_assets/2_1_1.png" width="60%"></img>
- <em><p align="center">그림 2.1.1. 시스템 초기화</p></em>
+ <img src="../_assets/2_1_1_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.1. System Initialization</p></em>
 </p>   
 </br>
 
-
-2. 시스템 초기화 이후에는 로봇 타입을 선택합니다.
-  로봇 타입을 선택하면 다음 화면이 나타납니다. 이때 사용할 총 부가축의 개수를 입력합니다. 설정이 완료되면 확인 버튼을 누릅니다.  
+2. After System Initialization, select the robot type.
+  Once the robot type is selected, the screen shown bellow will apper. Enter the total number of auxiliary axes to be used. After completing the settings, press the Confirm button.
 
 <p align="center">
- <img src="../_assets/2_1_2.png" width="60%"></img>
- <em><p align="center">그림 2.1.2. 로봇 타입 선택</p></em>
+ <img src="../_assets/2_1_2_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.2. Robot type Select</p></em>
 </p>   
 </br>
 
 <!-- ![](../_assets/2_1_2.png)
 ![](../_assets/2_1_3.png) -->
 
-3. 제어기 전원을 재투입합니다.  
+3. Power on the controller.
 
 <p align="center">
- <img src="../_assets/2_1_3.png" width="60%"></img>
- <em><p align="center">그림 2.1.3. 재부팅</p></em>
+ <img src="../_assets/2_1_3_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.3. Reboot</p></em>
 </p>   
 </br>
 
-4. 제어기 부팅이 완료된 후 [**시스템 > 초기화 > 부가축 파라미터 설정**] 메뉴에 진입해 부가축을 설정합니다.
-  이 화면에서 포지셔너에 해당하는 부가축은 축 사양을 포지셔너로 설정하고 해당하는 파라미터를 설정합니다. 포지셔너 축의 구성 형태에 따라 직동 또는 회전 축을 선택 하십시오. 직동 축인 경우 로봇 베이스 좌표 기준으로 포지셔너 축의 동작 방향을 알고 있는 경우 방향을 지정 할 수 있습니다. 정확한 방향을 알수 없는 경우 임의로 선택 하십시오. 회전 축의 경우 당사가 제공하는 표준 포지셔너가 아닌 경우에는 축 구성을 ‘임의’로 설정하고 나머지 파라미터를 설정합니다. 부가축 파라미터 설정 방법은 [부가축 기능 사용설명서](https://hrbook-hrc.web.app/#/view/doc-add-axes/korean/README) 를 참고하십시오.
+4. After the controller boots up, navigate to [**System > 5: Initialization > 5: Additional axis parameter setting**] to configure the auxiliary axes.
+  On this screen, set the auxiliary axes corresponding to positioners by selecting the axis specification as "Positioner" and configure the relevant parameters.
+  Depending on the configuration of the positioner axis, select either linear or rotary axis.
+  For linear axis, if the operating direction of the positioner axis is known relative to the robot base coordinates, specify the direction accordingly. If the exact direction is unknown, select arbitrarily.
+  For rotary axis, if the positioner is not a standard one provided by the manufacturer, set the axis configuration to "Custom" and configure the remaining parameters.
+  For detailed instructions on configuring auxiliary axes, please refer to the [Auxiliary Axis Function User Manual](https://hrbook-hrc.web.app/#/view/doc-add-axes/english/README).
+
 
 <!-- ![](../_assets/2_1_4.png)
 ![](../_assets/2_1_5.png) -->
 <p align="center">
- <img src="../_assets/2_1_4.png" width="60%"></img>
- <em><p align="center">그림 2.1.4. 직동 축 파리미터 구성</p></em>
+ <img src="../_assets/2_1_4_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.4. Linear Axis Parameter Configuration</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_5.png" width="60%"></img>
- <em><p align="center">그림 2.1.5. 회전 축 파라미터 구성</p></em>
+ <img src="../_assets/2_1_5_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.5. Rotary Axis Parameter Configuration</p></em>
 </p>   
 </br>
 
-5. 만약 당사에서 제공하는 포지셔너인 경우에는 축 구성에서 해당 목록을 선택하십시오.
-  이 경우에는 다른 파라미터를 설정할 필요가 없습니다.
+5. If the positioner is provided by our company, select the corresponding item from the axis configuration list.
+  In this case, there is no need to configure any other parameters.
 
 <p align="center">
- <img src="../_assets/2_1_6.png" width="60%"></img>
- <em><p align="center">그림 2.1.6. 당시 포지셔너 구성</p></em>
+ <img src="../_assets/2_1_6_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.6. Standard Parameter Configuration</p></em>
 </p>   
 </br>
 
 <!-- ![](../_assets/2_1_6.png) -->
 
-6. [**시스템 > 응용 파라미터 > 포지셔너 동기**]메뉴에서 포지셔너 그룹을 설정합니다. 
-2축 포지셔너 1개, 1축 포지셔너 2개를 설정하는 경우를 예시로 들겠습니다. 
-스테이션이 3개 필요하므로 스테이션을 추가해야 합니다. '+'버튼을 누르면 리스트 창에 스테이션이 생성됩니다.
-각 스테이션을 선택하고 부가축 번호를 입력하여 스테이션을 설정합니다. 1축 포지셔너의 경우 첫번째 칸에만 부가축 번호를 입력합니다.
-아래 그림에서는 부가축 a1, a2축은 2축 포지셔너로 스테이션 1이고 a3축은 1축 포지셔너로 스테이션 2, 마지막으로 a4축은 1축 포지셔너로써 스테이션 3으로 설정한 경우입니다.
+6. Navigate to [**System > 4: Application parameters > 3: Positioner synchronization**] to configure the positioner groups.
+  As an example, one 2-axis positioner and two 1-axis positioners are configured.
+  Since three stations are required, you need to add stations. Clicking the ‘+’ button will create stations in the list window.
+  Select each station and enter the auxiliary axis number to configure the station. For 1-axis positioners, enter the auxiliary axis number only in the first field.
+  In the figure below, auxiliary axes a1 and a2 correspond to the 2-axis positioner at Station 1, a3 corresponds to the 1-axis positioner at Station 2, and a4 corresponds to the 1-axis positioner at Station 3.
 
 <!-- ![](../_assets/2_1_7.png)  
 ![](../_assets/2_1_8.png)  
 ![](../_assets/2_1_9.png)   -->
 <p align="center">
- <img src="../_assets/2_1_7.png" width="60%"></img>
- <em><p align="center">그림 2.1.7. 부가축 a1, a2 설정</p></em>
+ <img src="../_assets/2_1_7_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.7. Auxiliary Axis a1, a2 Setting</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_8.png" width="60%"></img>
- <em><p align="center">그림 2.1.8. 부가축 a3 설정</p></em>
+ <img src="../_assets/2_1_8_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.8. Auxiliary Axis a3 Setting</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_9.png" width="60%"></img>
- <em><p align="center">그림 2.1.9. 부가축 a4 설정</p></em>
+ <img src="../_assets/2_1_9_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.9. Auxiliary Axis a4 Setting</p></em>
 </p>   
 </br>
 
-
-7. [**시스템 > 초기화 > 메커니즘 설정**]메뉴에서 포지셔너를 스테이션별로 조그하기 위해 메커니즘을 설정합니다.
+7. Navigate to [**System > 5: Initialization > 6: Mechanism Settings**] to configure the mechanism for jogging the positioner by each station.  
 
 <!-- ![](../_assets/2_1_10.png) -->
 <p align="center">
- <img src="../_assets/2_1_10.png" width="60%"></img>
- <em><p align="center">그림 2.1.10. 매커니즘 설정</p></em>
+ <img src="../_assets/2_1_10_en.png" width="60%"></img>
+ <em><p align="center">Figure 2.1.10. Mechanism Setting</p></em>
 </p>   
 </br>
 
 
-8. 제어기 전원을 재투입하면 부가축, 스테이션, 메커니즘 설정이 정상적으로 적용됩니다.
+8. Power cycle the controller to apply the auxiliary axis, station, and mechanism settings correctly.
+

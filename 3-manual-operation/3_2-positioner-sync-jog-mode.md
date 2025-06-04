@@ -1,21 +1,22 @@
-﻿# 3.2 포지셔너 동기 조그 모드
-포지셔너 동기조그는 포지셔너 캘리브레이션이 완료된 경우에만 사용 가능합니다. 
-포지셔너 단독 조그 상태에서, 티칭 펜던트의 ‘좌표계’ 버튼을 누르면 ‘동기 S1’과 같이 표시됩니다. 이 상태에서 포지셔너를 움직이면 로봇이 포지셔너의 움직임에 따라오면서 조그 동작을 합니다. 
+﻿# 3.2 Positioner Synchronized Jog Mode
+
+The positioner synchronized jog mode is available only after positioner calibration is completed.
+While in the positioner independent jog mode, pressing the "crd.sys" button on the teach pendant will display "Synchronized S1". In this mode, when the positioner moves, the robot follows the positioner’s movement and performs synchronized jogging.
 
 <!-- ![](../_assets/image14.png) -->
 <p align="center">
- <img src="../_assets/3_1_2.png" width="60%"></img>
- <em><p align="center">그림 3.1.2. 포지셔너 동기 조그 방법</p></em>
+ <img src="../_assets/3_1_2_en.png" width="60%"></img>
+ <em><p align="center">Figure 3.1.2. Positioner Synchronized Jog Method</p></em>
 </p>   
 </br>
 
-- 포지셔너 메커니즘: J7+J8
-- 좌표계: 동기 좌표계(동기 조그)
-- 기록 조건: smov 명령
+- Positioner mechanism: J7 + J8
+- Coordinate system: Synchronized coordinate system (synchronized jog)
+- Recording condition: smov command
 
 <!-- ![](../_assets/image14-1.png) -->
 <p align="center">
  <img src="../_assets/3_1_3.png" width="60%"></img>
- <em><p align="center">그림 3.1.3. 포지셔너 동작 시뮬레이션</p></em>
+ <em><p align="center">Figure 3.1.3. Positioner Operation Simulation</p></em>
 </p>   
 </br>
