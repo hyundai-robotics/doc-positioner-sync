@@ -4,7 +4,7 @@
 
 <!-- ![](../_assets/image14.png) -->
 <p align="center">
- <img src="../_assets/3_1_2.png" width="80%"></img>
+ <img src="../_assets/3_1_2.png" width="60%"></img>
  <em><p align="center">그림 3.1.2. 포지셔너 동기 조그 방법</p></em>
 </p>   
 </br>
@@ -15,7 +15,7 @@
 
 <!-- ![](../_assets/image14-1.png) -->
 <p align="center">
- <img src="../_assets/3_1_3.png" width="80%"></img>
+ <img src="../_assets/3_1_3.png" width="60%"></img>
  <em><p align="center">그림 3.1.3. 포지셔너 동작 시뮬레이션</p></em>
 </p>   
 </br>

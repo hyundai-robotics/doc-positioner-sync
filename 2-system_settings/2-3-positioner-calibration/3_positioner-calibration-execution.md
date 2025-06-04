@@ -5,7 +5,7 @@
 
 <!-- ![](../../_assets/image11.png) -->
 <p align="center">
- <img src="../../_assets/2_3_3.png" width="80%"></img>
+ <img src="../../_assets/2_3_3.png" width="60%"></img>
  <em><p align="center">그림 2.3.3. 포지셔너 캘리브레이션 실행</p></em>
 </p>   
 </br>
@@ -14,7 +14,7 @@
 
 <!-- ![](../../_assets/image12.png) -->
 <p align="center">
- <img src="../../_assets/2_3_4.png" width="80%"></img>
+ <img src="../../_assets/2_3_4.png" width="60%"></img>
  <em><p align="center">그림 2.3.4. 포지셔너 캘리브레이션 결과</p></em>
 </p>   
 </br>

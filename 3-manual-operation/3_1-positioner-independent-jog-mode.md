@@ -3,7 +3,7 @@
 
 <!-- ![](../_assets/image13.png) -->
 <p align="center">
- <img src="../_assets/3_1_1.png" width="80%"></img>
+ <img src="../_assets/3_1_1.png" width="60%"></img>
  <em><p align="center">그림 3.1.1. 포지셔너 단독 조그 방법</p></em>
 </p>   
 </br>

@@ -5,7 +5,7 @@
 
 <!-- ![](../_assets/2_1_1.png) -->
 <p align="center">
- <img src="../_assets/2_1_1.png" width="80%"></img>
+ <img src="../_assets/2_1_1.png" width="60%"></img>
  <em><p align="center">그림 2.1.1. 시스템 초기화</p></em>
 </p>   
 </br>
@@ -15,7 +15,7 @@
   로봇 타입을 선택하면 다음 화면이 나타납니다. 이때 사용할 총 부가축의 개수를 입력합니다. 설정이 완료되면 확인 버튼을 누릅니다.  
 
 <p align="center">
- <img src="../_assets/2_1_2.png" width="80%"></img>
+ <img src="../_assets/2_1_2.png" width="60%"></img>
  <em><p align="center">그림 2.1.2. 로봇 타입 선택</p></em>
 </p>   
 </br>
@@ -26,7 +26,7 @@
 3. 제어기 전원을 재투입합니다.  
 
 <p align="center">
- <img src="../_assets/2_1_3.png" width="80%"></img>
+ <img src="../_assets/2_1_3.png" width="60%"></img>
  <em><p align="center">그림 2.1.3. 재부팅</p></em>
 </p>   
 </br>
@@ -37,12 +37,12 @@
 <!-- ![](../_assets/2_1_4.png)
 ![](../_assets/2_1_5.png) -->
 <p align="center">
- <img src="../_assets/2_1_4.png" width="80%"></img>
+ <img src="../_assets/2_1_4.png" width="60%"></img>
  <em><p align="center">그림 2.1.4. 직동 축 파리미터 구성</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_5.png" width="80%"></img>
+ <img src="../_assets/2_1_5.png" width="60%"></img>
  <em><p align="center">그림 2.1.5. 회전 축 파라미터 구성</p></em>
 </p>   
 </br>
@@ -51,7 +51,7 @@
   이 경우에는 다른 파라미터를 설정할 필요가 없습니다.
 
 <p align="center">
- <img src="../_assets/2_1_6.png" width="80%"></img>
+ <img src="../_assets/2_1_6.png" width="60%"></img>
  <em><p align="center">그림 2.1.6. 당시 포지셔너 구성</p></em>
 </p>   
 </br>
@@ -68,17 +68,17 @@
 ![](../_assets/2_1_8.png)  
 ![](../_assets/2_1_9.png)   -->
 <p align="center">
- <img src="../_assets/2_1_7.png" width="80%"></img>
+ <img src="../_assets/2_1_7.png" width="60%"></img>
  <em><p align="center">그림 2.1.7. 부가축 a1, a2 설정</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_8.png" width="80%"></img>
+ <img src="../_assets/2_1_8.png" width="60%"></img>
  <em><p align="center">그림 2.1.8. 부가축 a3 설정</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_9.png" width="80%"></img>
+ <img src="../_assets/2_1_9.png" width="60%"></img>
  <em><p align="center">그림 2.1.9. 부가축 a4 설정</p></em>
 </p>   
 </br>
@@ -88,7 +88,7 @@
 
 <!-- ![](../_assets/2_1_10.png) -->
 <p align="center">
- <img src="../_assets/2_1_10.png" width="80%"></img>
+ <img src="../_assets/2_1_10.png" width="60%"></img>
  <em><p align="center">그림 2.1.10. 매커니즘 설정</p></em>
 </p>   
 </br>

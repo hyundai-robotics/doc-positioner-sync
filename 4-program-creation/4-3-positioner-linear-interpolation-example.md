@@ -3,62 +3,75 @@
 1. 대상물 위에 시작점 및 목표점을 결정합니다.
 
 <!-- ![](../_assets/image15.png) -->
-<p align="center">
- <img src="../_assets/4_1_1.png" width="50%"></img>
- <em><p align="center">그림 4.1.1. 과정 1</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.1. 과정 1
+  </em>
+</p>
+<br/>
 
 2. 메커니즘 키와 좌표계를 이용하여 포지셔너를 선택하여 포지셔너를 이동시킨 후, 다시 메커니즘키로 로봇을 선택하여 시작점에 로봇 툴 끝을 원하는 시작점에 일치시킵니다. 이 상태에서 기록키를 눌러 ‘move’명령을 기록합니다(필요에 따라 smov로 기록하십시오).
 
 3. 메커니즘 키와 좌표계 키를 이용하여 포지셔너 동기 조그 모드로 설정합니다. 현재 작업하는 포지셔너가 스테이션 1일 경우 좌표계가 ‘동기 S1’이 되도록 선택합니다.
 
 <!-- ![](../_assets/image16.png) -->
-<p align="center">
- <img src="../_assets/4_1_2.png" width="50%"></img>
- <em><p align="center">그림 4.1.2. 과정 2~3</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.2. 과정 2~3
+  </em>
+</p>
+<br/>
 
 4. 마스터를 선택한 상태에서 포지셔너의 위치를 희망하는 위치로 변경하면, 로봇은 포지셔너 위의 작업 시작점을 따라 자세와 위치가 유지됩니다.
 
 <!-- ![](../_assets/image17.png) -->
-<p align="center">
- <img src="../_assets/4_1_3.png" width="50%"></img>
- <em><p align="center">그림 4.1.3. 과정 4</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.3. 과정 4
+  </em>
+</p>
+<br/>
 
 5. (참고) 상기 상태에서 포지셔너 위의 한 점과 로봇 툴 끝의 오차는 로봇과 포지셔너의 캘리브레이션에 기인하는 오차이며, 이 오차가 재생시의 궤적오차로 나타나지는 않습니다. 즉, 어느 정도 오차량이 있을 지라도 로봇을 다시 움직여 목표위치로 로봇을 움직이고 “smov”로 기록하면, 재생시의 스텝의 궤적위치 오차는 거의 발생하지 않습니다.
 
 6. 메커니즘을 다시 로봇으로 선택한 다음, Jog키로 로봇을 ‘목표점’(S2)까지 이동하여 일치시킵니다.
 
 <!-- ![](../_assets/image18.png) -->
-<p align="center">
- <img src="../_assets/4_1_4.png" width="50%"></img>
- <em><p align="center">그림 4.1.4. 과정 6</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.4. 과정 6
+  </em>
+</p>
+<br/>
 
 7. 동기스텝(smov)을 기록하기 위해 다시 포지셔너 동기 조그 모드로 설정하여 좌표계가 ‘동기 S1’이 되도록 선택하고 [기록]키를 눌러서 “smov” 스텝을 기록합니다. 
 
 8. 이후의 스텝도 ③→④→⑤의 과정을 따릅니다.
 
 <!-- ![](../_assets/image19.png) -->
-<p align="center">
- <img src="../_assets/4_1_5.png" width="50%"></img>
- <em><p align="center">그림 4.1.5. 과정 7~8</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.5. 과정 7~8
+  </em>
+</p>
+<br/>
+
 
 9. 기록된 프로그램을 실행하면, 포지셔너가 이동하고 로봇은 포지셔너 위의 작업물에 대해 직선 보간으로 이동합니다.
 
 <!-- ![](../_assets/image20.png) -->
-<p align="center">
- <img src="../_assets/4_1_6.png" width="50%"></img>
- <em><p align="center">그림 4.1.6. 과정 9</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 50%; auto;">
+    그림 4.1.6. 과정 9
+  </em>
+</p>
+<br/>
 
 
 [**주의사항**]

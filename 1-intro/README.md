@@ -10,20 +10,23 @@
 |    포지셔너 그룹      | 1~4 그룹 지원                        |
 |    포지셔너 축 수     | 1축, 2축 포지셔너 지원(회전축, 직동축) |
 |    보간 방식          | 직선, 원호 보간 지원                  |
+
 <br/><br/>
 
-<p align="center">
- <img src="../_assets/1_0_1.png" width="60%"></img>
- <em><p align="center">그림 1.0.1. 1축 회전 포지셔너</p></em>
-</p>   
-</br>
-
-<p align="center">
- <img src="../_assets/1_0_2.png" width="60%"></img>
- <em><p align="center">그림 1.0.2. 2축 회전 포지셔너</p></em>
-</p>   
-</br>
-
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="../_assets/1_0_1.png" alt="1축 회전 포지셔너" width="100%" />
+      <br />
+      <em>그림 1.0.1. 1축 회전 포지셔너</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="../_assets/1_0_2.png" alt="2축 회전 포지셔너" width="100%" />
+      <br />
+      <em>그림 1.0.2. 2축 회전 포지셔너</em>
+    </td>
+  </tr>
+</table>
 
 <!-- 
 | <img src="../_assets/1_0_1.png" height="447px" width="357px"> | <img src="../_assets/1_0_2.png" height="447px" width="357px"> |
