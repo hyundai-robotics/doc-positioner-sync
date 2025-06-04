@@ -25,20 +25,23 @@
 |    포지셔너 그룹      | 1~4 그룹 지원                        |
 |    포지셔너 축 수     | 1축, 2축 포지셔너 지원(회전축, 직동축) |
 |    보간 방식          | 직선, 원호 보간 지원                  |
+
 <br/><br/>
 
-<p align="center">
- <img src="../_assets/1_0_1.png" width="60%"></img>
- <em><p align="center">그림 1.0.1. 1축 회전 포지셔너</p></em>
-</p>   
-</br>
-
-<p align="center">
- <img src="../_assets/1_0_2.png" width="60%"></img>
- <em><p align="center">그림 1.0.2. 2축 회전 포지셔너</p></em>
-</p>   
-</br>
-
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="../_assets/1_0_1.png" alt="1축 회전 포지셔너" width="100%" />
+      <br />
+      <em>그림 1.0.1. 1축 회전 포지셔너</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="../_assets/1_0_2.png" alt="2축 회전 포지셔너" width="100%" />
+      <br />
+      <em>그림 1.0.2. 2축 회전 포지셔너</em>
+    </td>
+  </tr>
+</table>
 
 <!-- 
 | <img src="../_assets/1_0_1.png" height="447px" width="357px"> | <img src="../_assets/1_0_2.png" height="447px" width="357px"> |
@@ -66,7 +69,7 @@
 
 
 <p align="center">
- <img src="../_assets/1_2_1.png" width="80%"></img>
+ <img src="../_assets/1_2_1.png" width="60%"></img>
  <em><p align="center">그림 1.2.1. 조작 순서</p></em>
 </p>   
 </br>
@@ -77,7 +80,7 @@
 
 <!-- ![](../_assets/2_1_1.png) -->
 <p align="center">
- <img src="../_assets/2_1_1.png" width="80%"></img>
+ <img src="../_assets/2_1_1.png" width="60%"></img>
  <em><p align="center">그림 2.1.1. 시스템 초기화</p></em>
 </p>   
 </br>
@@ -87,7 +90,7 @@
   로봇 타입을 선택하면 다음 화면이 나타납니다. 이때 사용할 총 부가축의 개수를 입력합니다. 설정이 완료되면 확인 버튼을 누릅니다.  
 
 <p align="center">
- <img src="../_assets/2_1_2.png" width="80%"></img>
+ <img src="../_assets/2_1_2.png" width="60%"></img>
  <em><p align="center">그림 2.1.2. 로봇 타입 선택</p></em>
 </p>   
 </br>
@@ -98,7 +101,7 @@
 3. 제어기 전원을 재투입합니다.  
 
 <p align="center">
- <img src="../_assets/2_1_3.png" width="80%"></img>
+ <img src="../_assets/2_1_3.png" width="60%"></img>
  <em><p align="center">그림 2.1.3. 재부팅</p></em>
 </p>   
 </br>
@@ -109,12 +112,12 @@
 <!-- ![](../_assets/2_1_4.png)
 ![](../_assets/2_1_5.png) -->
 <p align="center">
- <img src="../_assets/2_1_4.png" width="80%"></img>
+ <img src="../_assets/2_1_4.png" width="60%"></img>
  <em><p align="center">그림 2.1.4. 직동 축 파리미터 구성</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_5.png" width="80%"></img>
+ <img src="../_assets/2_1_5.png" width="60%"></img>
  <em><p align="center">그림 2.1.5. 회전 축 파라미터 구성</p></em>
 </p>   
 </br>
@@ -123,7 +126,7 @@
   이 경우에는 다른 파라미터를 설정할 필요가 없습니다.
 
 <p align="center">
- <img src="../_assets/2_1_6.png" width="80%"></img>
+ <img src="../_assets/2_1_6.png" width="60%"></img>
  <em><p align="center">그림 2.1.6. 당시 포지셔너 구성</p></em>
 </p>   
 </br>
@@ -140,17 +143,17 @@
 ![](../_assets/2_1_8.png)  
 ![](../_assets/2_1_9.png)   -->
 <p align="center">
- <img src="../_assets/2_1_7.png" width="80%"></img>
+ <img src="../_assets/2_1_7.png" width="60%"></img>
  <em><p align="center">그림 2.1.7. 부가축 a1, a2 설정</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_8.png" width="80%"></img>
+ <img src="../_assets/2_1_8.png" width="60%"></img>
  <em><p align="center">그림 2.1.8. 부가축 a3 설정</p></em>
 </p>   
 </br>
 <p align="center">
- <img src="../_assets/2_1_9.png" width="80%"></img>
+ <img src="../_assets/2_1_9.png" width="60%"></img>
  <em><p align="center">그림 2.1.9. 부가축 a4 설정</p></em>
 </p>   
 </br>
@@ -160,7 +163,7 @@
 
 <!-- ![](../_assets/2_1_10.png) -->
 <p align="center">
- <img src="../_assets/2_1_10.png" width="80%"></img>
+ <img src="../_assets/2_1_10.png" width="60%"></img>
  <em><p align="center">그림 2.1.10. 매커니즘 설정</p></em>
 </p>   
 </br>
@@ -176,14 +179,119 @@
 
 - 포지셔너 캘리브레이션의 기본적인 원리는 포지셔너가 회전 축으로 구성된 경우 교시된 3점의 위치로부터 원을 구성하여 회전축의 위치를 계산하는 방식입니다. 따라서 회전축의 중심을 계산하기 위해서는 축 별로 3점의 교시점이 필요합니다. 회전축으로 구성된 2축 포지셔너의 경우 가운데 한 점을 공통으로 활용하여 총 5점의 교시점을 활용하여 각각의 회전축의 위치와 방향을 계산 할 수 있습니다. 직동축으로 구성된 포지셔너의 경우는 포지셔너의 축 방향만을 계산하기 때문에 축별로 2점의 교시점이 필요하며, 2축으로 구성된 경우에는 가운데 점을 공통으로 활용하여 총 3점의 교시점으로부터 각각의 축 동작 방향을 계산하게 됩니다. 
 
-- 프로그램 교시 후 설정화면에서 수행하거나 posi_calib 프로시져를 통해 포지셔너 캘리브레이션을 계산할 수 있습니다.# 3. 수동 조작
+- 프로그램 교시 후 설정화면에서 수행하거나 posi_calib 프로시져를 통해 포지셔너 캘리브레이션을 계산할 수 있습니다.# 2.3.1 1축 포지셔너 캘리브레이션 프로그램 교시
+
+1.	교시할 프로그램을 선택합니다.
+2.	1축 포지셔너의 경우에는 포지셔너 위에 뾰족한 티칭점을 고정합니다. 이때 이 티칭점을 가능한 회전 중심과 멀리 설치하여야 캘리브레이션이 정확합니다.
+3.	포지셔너를 30°정도씩 한 방향으로 회전시키면서 3점을 정확히 티칭하여 프로그램을 기록합니다. 티칭하는 방법은 아래의 그림과 같습니다.
+직동 포지셔너의 경우는 가능한 멀리 떨어진 2점을 상기와 같은 방법으로 교시 합니다. 
+4.	교시할 때 로봇의 자세는 가능하면 동일하게 합니다.
+
+<!-- ![](../../_assets/image9.png) -->
+
+<p align="center">
+ <img src="../../_assets/2_3_1.png" width="70%"></img>
+ <em><p align="center">그림 2.3.1. 1축 포지셔너 캘리브레이션 교시 방법</p></em>
+</p>   
+</br># 2.3.2 2축 포지셔너 캘리브레이션 프로그램 교시
+
+1.	교시할 프로그램을 선택합니다.
+2.	뾰족한 티칭점을 가능한 회전 중심과 멀리 설치합니다.
+3.	2축 포지셔너의 경우에는 1축 포지셔너와 마찬가지로 두번째 축만 움직여 3점을 우선 교시합니다. 이 후에 3번째 교시점(S3)에서 첫번째 축만 이동하여 4번째 점과(S4) 5번째 점을(S5) 교시합니다. 직동 포지셔너의 경우 두번째 축에 대해 2점 교시 후 첫번째 축에 대해 이동 후 한점을 교시합니다. 
+4.	교시를 할 때에는 로봇의 자세는 가능하면 변경하지 않고 교시하면 정확한 캘리브레이션이 됩니다.
+
+<!-- ![](../../_assets/image10.png) -->
+
+<p align="center">
+ <img src="../../_assets/2_3_2.png" width="70%"></img>
+ <em><p align="center">그림 2.3.2. 2축 포지셔너 캘리브레이션 교시 방법</p></em>
+</p>   
+</br># 2.3.3 포지셔너 캘리브레이션 실행
+
+1. [**시스템 > 응용 파라미터 > 포지셔너 동기**]로 진입합니다.
+2. 캘리브레이션 할 스테이션을 선택하고 캘리브레이션 버튼을 클릭하여 교시한 작업 프로그램 번호를 입력 합니다.
+
+<!-- ![](../../_assets/image11.png) -->
+<p align="center">
+ <img src="../../_assets/2_3_3.png" width="60%"></img>
+ <em><p align="center">그림 2.3.3. 포지셔너 캘리브레이션 실행</p></em>
+</p>   
+</br>
+
+3. 캘리브레이션 결과가 표시됩니다. 우측의 『확인』키를 누르면 해당 데이터 설정이 완료됩니다. 
+
+<!-- ![](../../_assets/image12.png) -->
+<p align="center">
+ <img src="../../_assets/2_3_4.png" width="60%"></img>
+ <em><p align="center">그림 2.3.4. 포지셔너 캘리브레이션 결과</p></em>
+</p>   
+</br>
+
+4. 사용자가 캐드데이터로 포지셔너의 위치를 정확히 알고 있는 경우 수동으로 포지셔너의 위치 및 DH파라미터를 설정한 후 『확인』키를 누르면 마찬가지로 데이터 설정이 반영됩니다.
+
+5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다. [**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)# 2.3.4 posi_calib
+포지셔너가 로봇과 동기동작을 하기 위해 필요한 포지셔너 캘리브레이션을 수행하는 명령입니다. 
+
+### 설명
+일반적으로 포지셔너 캘리브레이션은 설정 대화상자를 통해 수행합니다. 그러나, 서보툴 체인지로 포지셔너가 변경되는 경우에는 로봇 운전 중 캘리브레이션이 변경되어야 합니다. 이를 로봇 프로그램 상에서 수행하기 위한 명령입니다. 
+
+[**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다.
+
+### 문법
+
+```python
+posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
+```
+
+### 파라미터
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">항목</th>
+      <th style="text-align:left">의미</th>
+      <th style="text-align:left">기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">캘리브레이션 프로그램 번호</td>
+      <td style="text-align:left">
+        포지셔너 캘리브레이션 프로그램 번호
+        (1 ~ 9999)
+      </td>
+      <td style="text-align:left">변수</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">스테이션 번호</td>
+      <td style="text-align:left">
+        캘리브레이션 할 스테이션 번호
+      <td style="text-align:left">변수</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### 사용 예
+```python
+          # 포지셔너 캘리브레이션용 프로그램(9995.job)
+     S1   move P,spd=100%,accu=1,tool=0 # 포지셔너 캘리브레이션 교시
+     S2   move P,spd=100%,accu=1,tool=0 # 포지셔너 캘리브레이션 교시
+     S3   move P,spd=100%,accu=1,tool=0 # 포지셔너 캘리브레이션 교시
+```
+```python
+          # 툴체인지 + 포지셔너 캘리브레이션
+     S1   move P,spd=100%,accu=1,tool=0 
+          toolchng on,tg=P1,di=1        # 툴체인지
+          posi_calib job=9995,s_=1      # 포지셔너 캘리브레이션
+```
+# 3. 수동 조작
 
 포지셔너를 조그하는 방법은 포지셔너만 조그하는 ‘단독 조그 방법’과 포지셔너를 조그하여 움직였을 때 로봇이 동기화 하여 따라오도록 하는 ‘동기 조그 방법’ 두가지 방법이 있습니다.# 3.1 포지셔너 단독 조그 모드
 단독 조그 방법은 티칭 펜던트의 ‘메커니즘’키를 누르면 해당 메커니즘으로 토글되어 선택이 변경됩니다. 아래와 같은 상태에서 포지셔너는 단독으로 조그됩니다.
 
 <!-- ![](../_assets/image13.png) -->
 <p align="center">
- <img src="../_assets/3_1_1.png" width="80%"></img>
+ <img src="../_assets/3_1_1.png" width="60%"></img>
  <em><p align="center">그림 3.1.1. 포지셔너 단독 조그 방법</p></em>
 </p>   
 </br>
@@ -197,7 +305,7 @@
 
 <!-- ![](../_assets/image14.png) -->
 <p align="center">
- <img src="../_assets/3_1_2.png" width="80%"></img>
+ <img src="../_assets/3_1_2.png" width="60%"></img>
  <em><p align="center">그림 3.1.2. 포지셔너 동기 조그 방법</p></em>
 </p>   
 </br>
@@ -208,7 +316,7 @@
 
 <!-- ![](../_assets/image14-1.png) -->
 <p align="center">
- <img src="../_assets/3_1_3.png" width="80%"></img>
+ <img src="../_assets/3_1_3.png" width="60%"></img>
  <em><p align="center">그림 3.1.3. 포지셔너 동작 시뮬레이션</p></em>
 </p>   
 </br>
@@ -228,68 +336,81 @@
 4. Accuracy : 작업물 위에서 직선, 원호 보간의 Accuracy를 설정합니다.
 5. Tool 번호 : 작업을 수행하는 로봇 툴 번호를 설정합니다.
 
-smov 명령의 설정은 포지셔너 좌표계 위에서 결정되는 것입니다. 예를 들어 속도의 경우 포지셔너를 움직이면서 두 점을 직선으로 이동한 경우 포지셔너 위에서 TCP가 이동하는 속도가 설정됩니다.
+- smov 명령의 설정은 포지셔너 좌표계 위에서 결정되는 것입니다. 예를 들어 속도의 경우 포지셔너를 움직이면서 두 점을 직선으로 이동한 경우 포지셔너 위에서 TCP가 이동하는 속도가 설정됩니다.
 # 4.3 포지셔너 상의 직선보간 교시 예시
 
 1. 대상물 위에 시작점 및 목표점을 결정합니다.
 
 <!-- ![](../_assets/image15.png) -->
-<p align="center">
- <img src="../_assets/4_1_1.png" width="50%"></img>
- <em><p align="center">그림 4.1.1. 과정 1</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.1. 과정 1
+  </em>
+</p>
+<br/>
 
 2. 메커니즘 키와 좌표계를 이용하여 포지셔너를 선택하여 포지셔너를 이동시킨 후, 다시 메커니즘키로 로봇을 선택하여 시작점에 로봇 툴 끝을 원하는 시작점에 일치시킵니다. 이 상태에서 기록키를 눌러 ‘move’명령을 기록합니다(필요에 따라 smov로 기록하십시오).
 
 3. 메커니즘 키와 좌표계 키를 이용하여 포지셔너 동기 조그 모드로 설정합니다. 현재 작업하는 포지셔너가 스테이션 1일 경우 좌표계가 ‘동기 S1’이 되도록 선택합니다.
 
 <!-- ![](../_assets/image16.png) -->
-<p align="center">
- <img src="../_assets/4_1_2.png" width="50%"></img>
- <em><p align="center">그림 4.1.2. 과정 2~3</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.2. 과정 2~3
+  </em>
+</p>
+<br/>
 
 4. 마스터를 선택한 상태에서 포지셔너의 위치를 희망하는 위치로 변경하면, 로봇은 포지셔너 위의 작업 시작점을 따라 자세와 위치가 유지됩니다.
 
 <!-- ![](../_assets/image17.png) -->
-<p align="center">
- <img src="../_assets/4_1_3.png" width="50%"></img>
- <em><p align="center">그림 4.1.3. 과정 4</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.3. 과정 4
+  </em>
+</p>
+<br/>
 
 5. (참고) 상기 상태에서 포지셔너 위의 한 점과 로봇 툴 끝의 오차는 로봇과 포지셔너의 캘리브레이션에 기인하는 오차이며, 이 오차가 재생시의 궤적오차로 나타나지는 않습니다. 즉, 어느 정도 오차량이 있을 지라도 로봇을 다시 움직여 목표위치로 로봇을 움직이고 “smov”로 기록하면, 재생시의 스텝의 궤적위치 오차는 거의 발생하지 않습니다.
 
 6. 메커니즘을 다시 로봇으로 선택한 다음, Jog키로 로봇을 ‘목표점’(S2)까지 이동하여 일치시킵니다.
 
 <!-- ![](../_assets/image18.png) -->
-<p align="center">
- <img src="../_assets/4_1_4.png" width="50%"></img>
- <em><p align="center">그림 4.1.4. 과정 6</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.4. 과정 6
+  </em>
+</p>
+<br/>
 
 7. 동기스텝(smov)을 기록하기 위해 다시 포지셔너 동기 조그 모드로 설정하여 좌표계가 ‘동기 S1’이 되도록 선택하고 [기록]키를 눌러서 “smov” 스텝을 기록합니다. 
 
 8. 이후의 스텝도 ③→④→⑤의 과정을 따릅니다.
 
 <!-- ![](../_assets/image19.png) -->
-<p align="center">
- <img src="../_assets/4_1_5.png" width="50%"></img>
- <em><p align="center">그림 4.1.5. 과정 7~8</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 40%; auto;">
+    그림 4.1.5. 과정 7~8
+  </em>
+</p>
+<br/>
+
 
 9. 기록된 프로그램을 실행하면, 포지셔너가 이동하고 로봇은 포지셔너 위의 작업물에 대해 직선 보간으로 이동합니다.
 
 <!-- ![](../_assets/image20.png) -->
-<p align="center">
- <img src="../_assets/4_1_6.png" width="50%"></img>
- <em><p align="center">그림 4.1.6. 과정 9</p></em>
-</p>   
-</br>
+<p style="text-align: left;">
+  <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
+  <em style="display: block; text-align: center; width: 50%; auto;">
+    그림 4.1.6. 과정 9
+  </em>
+</p>
+<br/>
 
 
 [**주의사항**]
