@@ -10,12 +10,14 @@ Key functional specifications are as follows:
 | Positioner Group | Group 1~4 Support |
 | Positioner axis | 1-axis, 2-axis Positioner Support(direct drive, rotation) |
 | Interpolation method | Support for linear, circular interpolation |
-<br/><br/>
+
+
+<br/>
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="../_assets/1_0_1.png" alt="1-axis rotation positioner" width="100%" />
+      <img src="../_assets/1_0_1.png" alt="1-axis rotation positioner" width="97%" />
       <br />
       <em>Figure 1.0.1. 1-axis rotation positioner</em>
     </td>

@@ -2,7 +2,8 @@
 
 {% hint style="warning" %}
 
-The information provided in this product manual is the property of Hyundai Robotics.
+The information provided in this product manual is the property of Hyundai Robotics.  
+
 It cannot be reproduced or redistributed in part or whole without written consent from Hyundai Robotics, and it cannot be provided to third parties or used for other purposes.
 
 The manual can be changed without prior notification.
@@ -22,12 +23,14 @@ Key functional specifications are as follows:
 | Positioner Group | Group 1~4 Support |
 | Positioner axis | 1-axis, 2-axis Positioner Support(direct drive, rotation) |
 | Interpolation method | Support for linear, circular interpolation |
-<br/><br/>
+
+
+<br/>
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="../_assets/1_0_1.png" alt="1-axis rotation positioner" width="100%" />
+      <img src="../_assets/1_0_1.png" alt="1-axis rotation positioner" width="97%" />
       <br />
       <em>Figure 1.0.1. 1-axis rotation positioner</em>
     </td>
@@ -174,7 +177,7 @@ Key functional specifications are as follows:
 
 Please refer to the following: [**Hi6 Robot Controller Operation Manual 7.7 Auto Calibration**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/7-auto-calibration/README)# 2.3 Positioner Calibration
 
-- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot’s TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot’s TCP pose must be input precisely. As a preliminary step, the “[System > 6: Auto Calibration > Optimize axis origin and tool length]” function can be utilized.
+- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot’s TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot’s TCP pose must be input precisely. As a preliminary step, the “[**System > 6: Auto Calibration > Optimize axis origin and tool length**]” function can be utilized.
 
 - To use positioner calibration, a group number must be assigned to the positioner axis. A positioner group can consist of up to 2-axes, which can be configured as either rotary-rotary or linear-linear.
 
@@ -218,7 +221,7 @@ Please refer to the following: [**Hi6 Robot Controller Operation Manual 7.7 Auto
 <!-- ![](../../_assets/image10.png) -->
 
 <p align="center">
- <img src="../../_assets/2_3_2.png" width="70%"></img>
+ <img src="../../_assets/2_3_2.png" width="80%"></img>
  <em><p align="center">Figure 2.3.2. Teaching the 2-Axis Positioner Calibration</p></em>
 </p>   
 </br># 2.3.3 Executing Positioner Calibration
@@ -244,7 +247,7 @@ Please refer to the following: [**Hi6 Robot Controller Operation Manual 7.7 Auto
 
 4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the "✅OK" button will apply the data settings accordingly.
 
-5. You can verify whether the calibration was performed correctly at the following link: [**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)
+5. You can verify whether the calibration was performed correctly at the following link: [**3.2 Positioner Synchronized Jog Mode**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/english/3-manual-operation/3_2-positioner-sync-jog-mode)
 # 2.3.4 posi_calib
 
 This command performs the positioner calibration required for the positioner to operate synchronously with the robot.
@@ -254,7 +257,7 @@ This command performs the positioner calibration required for the positioner to 
 
 Generally, positioner calibration is performed through the settings dialog. However, when the positioner is changed due to a servo tool change, calibration must be updated during robot operation. This command is used to perform calibration within the robot program.
 
-You can verify whether the calibration was performed correctly at the following link: [**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)
+You can verify whether the calibration was performed correctly at the following link: [**3.2 Positioner Synchronized Jog Mode**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/english/3-manual-operation/3_2-positioner-sync-jog-mode)
 
 
 ### Syntax

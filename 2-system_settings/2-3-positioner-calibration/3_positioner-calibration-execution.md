@@ -21,4 +21,4 @@
 
 4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the "✅OK" button will apply the data settings accordingly.
 
-5. You can verify whether the calibration was performed correctly at the following link: [**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)
+5. You can verify whether the calibration was performed correctly at the following link: [**3.2 Positioner Synchronized Jog Mode**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/english/3-manual-operation/3_2-positioner-sync-jog-mode)
