@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6 Manual - Positioner sync.](README.md)
+* [${cont_model} Manual - Positioner sync.](README.md)
 * [1. Overview](1-intro/README.md)
   * [1.1 Major Functions](1-intro/1-1-major-functions.md)
   * [1.2 Operation Sequence](1-intro/1-2-operation-sequence.md)

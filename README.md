@@ -1,4 +1,4 @@
-﻿# Hi6 Functional Manual - positioner sync.
+﻿# ${cont_model} Functional Manual - positioner sync.
 
 {% hint style="warning" %}
 

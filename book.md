@@ -1,4 +1,4 @@
-﻿# Hi6 Functional Manual - positioner sync.
+﻿# ${cont_model} Functional Manual - positioner sync.
 
 {% hint style="warning" %}
 
@@ -175,7 +175,7 @@ Key functional specifications are as follows:
 
 # 2.2 Robot Calibration
 
-Please refer to the following: [**Hi6 Robot Controller Operation Manual 7.7 Auto Calibration**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/7-auto-calibration/README)# 2.3 Positioner Calibration
+Please refer to the following: [**${cont_model} Robot Controller Operation Manual 7.7 Auto Calibration**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/7-auto-calibration/README)# 2.3 Positioner Calibration
 
 - Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot’s TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot’s TCP pose must be input precisely. As a preliminary step, the “[**System > 6: Auto Calibration > Optimize axis origin and tool length**]” function can be utilized.
 
