@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6 로봇제어기 기능설명서 - 포지셔너 동기](README.md)
+* [${cont_model} 로봇제어기 기능설명서 - 포지셔너 동기](README.md)
 * [1. 개요](1-intro/README.md)
   * [1.1 주요 기능](1-intro/1-1-major-functions.md)
   * [1.2 조작 순서](1-intro/1-2-operation-sequence.md)
