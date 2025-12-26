@@ -19,3 +19,6 @@
   * [4.1 스텝 기록](4-program-creation/4-1-step-recording.md)
   * [4.2 smov](4-program-creation/4-2-smov.md)
   * [4.3 포지셔너 상의 직선보간 교시 예](4-program-creation/4-3-positioner-linear-interpolation-example.md)
+
+* [5. 부가축 move 독립 실행](5-add-axis-move-independent-execution/README.md)
+  * [5.1 시스템 설정](5-add-axis-move-independent-execution/5-1-system-setting.md)
