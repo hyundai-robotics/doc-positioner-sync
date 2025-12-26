@@ -1,6 +1,6 @@
 ﻿# 5.1 시스템 설정
-1. [**시스템 > 응용 파라미터 > 명령문 독립 실행**] 메뉴에 진입합니다.
-![](../_assets/5_1_1.png)
+1. [**시스템 > 응용 파라미터 > 명령문 독립 실행**] 메뉴에 진입합니다.  
+![](../_assets/5_1_1.png)  
     - 입력 신호  
     제어기에 입력되는 신호를 설정합니다.  
 
@@ -20,8 +20,8 @@
 
 3. 부가축 move 독립 실행을 수행할 축을 axisctrl off 명령으로 설정합니다.  
     axisctrl 명령은 작업 프로그램에 의해 부가축의 제어를 할 것인지 여부를 선택하는 명령입니다. axisctrl off된 축은 작업 프로그램에 기록된 위치로 이동하지 않고 독립적으로 이동할 수 있습니다. axisctrl on된 축은 작업 프로그램에 기록된 위치로 이동합니다.  
-    외부 입력 신호에 의한 move 독립 실행은 axisctrl off ~ axisctrl on 사이에 해당하는 부분에서만 유효합니다 axisctrl off인 상태에서, 명령문 독립실행에서 지정한 입력신호가 들어올 경우 move문을 수행합니다. axisctrl off인 축은 하기 그림 상단의 j_7과 같이 노란색 글씨로 표시됩니다.
-    ![](../_assets/5_1_2.png)
+    외부 입력 신호에 의한 move 독립 실행은 axisctrl off ~ axisctrl on 사이에 해당하는 부분에서만 유효합니다 axisctrl off인 상태에서, 명령문 독립실행에서 지정한 입력신호가 들어올 경우 move문을 수행합니다. axisctrl off인 축은 하기 그림 상단의 j_7과 같이 노란색 글씨로 표시됩니다.  
+    ![](../_assets/5_1_2.png)  
     자세한 내용은 [Hi6 로봇제어기 기능설명서 - 멀티태스킹 - 2.1.6 axisctrl](https://hrbook-hrc.web.app/#/view/doc-multi-task/korean/2-related-function/2-1-command-sentence/6-axisctrl)을 참고하십시오.
 
 

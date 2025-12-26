@@ -16,92 +16,92 @@
 	},
 	{
 		"link": "1-intro/1-2-operation-sequence.md",
-		"char_ofs": 2234,
-		"byte_ofs": 4175
+		"char_ofs": 2239,
+		"byte_ofs": 4180
 	},
 	{
 		"link": "2-system_settings/README.md",
-		"char_ofs": 2381,
-		"byte_ofs": 4353
+		"char_ofs": 2386,
+		"byte_ofs": 4358
 	},
 	{
 		"link": "2-system_settings/2-1-system-initialization.md",
-		"char_ofs": 2392,
-		"byte_ofs": 4374
+		"char_ofs": 2397,
+		"byte_ofs": 4379
 	},
 	{
 		"link": "2-system_settings/2-2-robot-calibration.md",
-		"char_ofs": 5302,
-		"byte_ofs": 9071
+		"char_ofs": 5307,
+		"byte_ofs": 9076
 	},
 	{
 		"link": "2-system_settings/2-3-positioner-calibration/README.md",
-		"char_ofs": 5476,
-		"byte_ofs": 9318
+		"char_ofs": 5481,
+		"byte_ofs": 9323
 	},
 	{
 		"link": "2-system_settings/2-3-positioner-calibration/1_1axis-positioner-calibration-teaching.md",
-		"char_ofs": 6222,
-		"byte_ofs": 11125
+		"char_ofs": 6227,
+		"byte_ofs": 11130
 	},
 	{
 		"link": "2-system_settings/2-3-positioner-calibration/2_2axis-positioner-calibration-teaching.md",
-		"char_ofs": 6711,
-		"byte_ofs": 12070
+		"char_ofs": 6716,
+		"byte_ofs": 12075
 	},
 	{
 		"link": "2-system_settings/2-3-positioner-calibration/3_positioner-calibration-execution.md",
-		"char_ofs": 7218,
-		"byte_ofs": 13027
+		"char_ofs": 7223,
+		"byte_ofs": 13032
 	},
 	{
 		"link": "2-system_settings/2-3-positioner-calibration/4_posi_calib.md",
-		"char_ofs": 8054,
-		"byte_ofs": 14413
+		"char_ofs": 8059,
+		"byte_ofs": 14418
 	},
 	{
 		"link": "3-manual-operation/README.md",
-		"char_ofs": 9512,
-		"byte_ofs": 16607
+		"char_ofs": 9517,
+		"byte_ofs": 16612
 	},
 	{
 		"link": "3-manual-operation/3_1-positioner-independent-jog-mode.md",
-		"char_ofs": 9624,
-		"byte_ofs": 16886
+		"char_ofs": 9629,
+		"byte_ofs": 16891
 	},
 	{
 		"link": "3-manual-operation/3_2-positioner-sync-jog-mode.md",
-		"char_ofs": 9970,
-		"byte_ofs": 17480
+		"char_ofs": 9975,
+		"byte_ofs": 17485
 	},
 	{
 		"link": "4-program-creation/README.md",
-		"char_ofs": 10562,
-		"byte_ofs": 18446
+		"char_ofs": 10567,
+		"byte_ofs": 18451
 	},
 	{
 		"link": "4-program-creation/4-1-step-recording.md",
-		"char_ofs": 10575,
-		"byte_ofs": 18475
+		"char_ofs": 10580,
+		"byte_ofs": 18480
 	},
 	{
 		"link": "4-program-creation/4-2-smov.md",
-		"char_ofs": 10694,
-		"byte_ofs": 18748
+		"char_ofs": 10699,
+		"byte_ofs": 18753
 	},
 	{
 		"link": "4-program-creation/4-3-positioner-linear-interpolation-example.md",
-		"char_ofs": 11099,
-		"byte_ofs": 19563
+		"char_ofs": 11104,
+		"byte_ofs": 19568
 	},
 	{
 		"link": "5-add-axis-move-independent-execution/README.md",
-		"char_ofs": 14254,
-		"byte_ofs": 24699
+		"char_ofs": 14259,
+		"byte_ofs": 24704
 	},
 	{
 		"link": "5-add-axis-move-independent-execution/5-1-system-setting.md",
-		"char_ofs": 14340,
-		"byte_ofs": 24887
+		"char_ofs": 14345,
+		"byte_ofs": 24892
 	}
 ]
