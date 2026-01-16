@@ -4,7 +4,7 @@
 ### 설명
 일반적으로 포지셔너 캘리브레이션은 설정 대화상자를 통해 수행합니다. 그러나, 서보툴 체인지로 포지셔너가 변경되는 경우에는 로봇 운전 중 캘리브레이션이 변경되어야 합니다. 이를 로봇 프로그램 상에서 수행하기 위한 명령입니다. 
 
-[**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다.
+[**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다.
 
 ### 문법
 
