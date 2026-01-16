@@ -240,7 +240,7 @@
 
 4. 사용자가 캐드데이터로 포지셔너의 위치를 정확히 알고 있는 경우 수동으로 포지셔너의 위치 및 DH파라미터를 설정한 후 『확인』키를 누르면 마찬가지로 데이터 설정이 반영됩니다.
 
-5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다. "[3.2장 포지셔너 동기 조그 모드](../../3-manual-operation/3_2-positioner-sync-jog-mode.md?cont_model=${cont_model})"
+5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다. `3.2장 포지셔너 동기 조그 모드`(https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)
 [__SOURCE](2-system_settings/2-3-positioner-calibration/4_posi_calib.md)
 # 2.3.4 posi_calib
 포지셔너가 로봇과 동기동작을 하기 위해 필요한 포지셔너 캘리브레이션을 수행하는 명령입니다. 
