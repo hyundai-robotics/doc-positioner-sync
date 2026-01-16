@@ -1,7 +1,7 @@
 ﻿# 2.1 System Initialization
 
 1. When setting up the controller for the first time, perform a system initialization.
-  navigate to [**System > 5: Initialization > 1: System format**] and press the initialize button.
+  navigate to `System > 5: Initialization > 1: System format` and press the initialize button.
 
 <!-- ![](../_assets/2_1_1.png) -->
 <p align="center">
@@ -30,12 +30,12 @@
 </p>   
 </br>
 
-4. After the controller boots up, navigate to [**System > 5: Initialization > 5: Additional axis parameter setting**] to configure the auxiliary axes.
+4. After the controller boots up, navigate to `System > 5: Initialization > 5: Additional axis parameter setting` to configure the auxiliary axes.
   On this screen, set the auxiliary axes corresponding to positioners by selecting the axis specification as "Positioner" and configure the relevant parameters.
   Depending on the configuration of the positioner axis, select either linear or rotary axis.
   For linear axis, if the operating direction of the positioner axis is known relative to the robot base coordinates, specify the direction accordingly. If the exact direction is unknown, select arbitrarily.
   For rotary axis, if the positioner is not a standard one provided by the manufacturer, set the axis configuration to "Custom" and configure the remaining parameters.
-  For detailed instructions on configuring auxiliary axes, please refer to the [Auxiliary Axis Function User Manual](https://hrbook-hrc.web.app/#/view/doc-add-axes/english/README).
+  For detailed instructions on configuring auxiliary axes, please refer to the [Auxiliary Axis Function User Manual](https://hrbook-hrc.web.app/#/view/doc-add-axes/en/README?cont_model=${cont_model}).
 
 
 <!-- ![](../_assets/2_1_4.png)
@@ -62,9 +62,9 @@
 
 <!-- ![](../_assets/2_1_6.png) -->
 
-6. Navigate to [**System > 4: Application parameters > 3: Positioner synchronization**] to configure the positioner groups.
+6. Navigate to `System > 4: Application parameters > 3: Positioner synchronization` to configure the positioner groups.
   As an example, one 2-axis positioner and two 1-axis positioners are configured.
-  Since three stations are required, you need to add stations. Clicking the ‘+’ button will create stations in the list window.
+  Since three stations are required, you need to add stations. Clicking the '+' button will create stations in the list window.
   Select each station and enter the auxiliary axis number to configure the station. For 1-axis positioners, enter the auxiliary axis number only in the first field.
   In the figure below, auxiliary axes a1 and a2 correspond to the 2-axis positioner at Station 1, a3 corresponds to the 1-axis positioner at Station 2, and a4 corresponds to the 1-axis positioner at Station 3.
 
@@ -87,7 +87,7 @@
 </p>   
 </br>
 
-7. Navigate to [**System > 5: Initialization > 6: Mechanism Settings**] to configure the mechanism for jogging the positioner by each station.  
+7. Navigate to `System > 5: Initialization > 6: Mechanism Settings` to configure the mechanism for jogging the positioner by each station.  
 
 <!-- ![](../_assets/2_1_10.png) -->
 <p align="center">

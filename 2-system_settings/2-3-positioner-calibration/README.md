@@ -1,6 +1,6 @@
 ﻿# 2.3 Positioner Calibration
 
-- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot’s TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot’s TCP pose must be input precisely. As a preliminary step, the “[**System > 6: Auto Calibration > Optimize axis origin and tool length**]” function can be utilized.
+- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot's TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot's TCP pose must be input precisely. As a preliminary step, the "`System > 6: Auto Calibration > Optimize axis origin and tool length`" function can be utilized.
 
 - To use positioner calibration, a group number must be assigned to the positioner axis. A positioner group can consist of up to 2-axes, which can be configured as either rotary-rotary or linear-linear.
 

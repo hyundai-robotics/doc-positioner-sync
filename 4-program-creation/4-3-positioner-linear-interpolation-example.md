@@ -74,21 +74,21 @@
 <br/>
 
 
-[**Caution**]
+`Caution`
 1) Recording positioner synchronized steps (smov) does not necessarily have to follow the exact method described above.
   You can move the robot and positioner independently to set the position and orientation, then record the step as smov.
   The robot will move according to the specified interpolation method relative to the workpiece on the positioner.
 
-2) If two consecutive smov steps both use linear interpolation (“L”), cornering motion will be performed just like with move commands.
+2) If two consecutive smov steps both use linear interpolation ("L"), cornering motion will be performed just like with move commands.
 
 3) The speed set in smov steps is the working speed.
-  Therefore, even if the positioner moves a lot, if the working distance between recorded steps on the workpiece is very short, the positioner’s working speed may effectively become infinite(∞), causing it to move at its maximum speed.
-  To limit the positioner speed in such cases, set the speed unit to “SEC”.
+  Therefore, even if the positioner moves a lot, if the working distance between recorded steps on the workpiece is very short, the positioner's working speed may effectively become infinite(∞), causing it to move at its maximum speed.
+  To limit the positioner speed in such cases, set the speed unit to "SEC".
   This means the step movement is based on time, not speed, so even if the distance on the workpiece is zero(0), the move time is specified.
 <br/><br/>
 
 
-[**Example of Programming**]
+`Example of Programming`
 ```py
 
     S1   move  L,spd=60%,accu=1,tool=0        # Approach start position step

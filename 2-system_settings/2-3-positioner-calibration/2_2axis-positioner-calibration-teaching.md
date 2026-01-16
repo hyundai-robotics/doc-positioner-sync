@@ -9,7 +9,7 @@
   Then, from the 3rd teaching point(S3), move only the 1-Axis to teach the 4th(S4) and 5th(S5) points.
   For a linear positioner, teach two points on the 2-Axis, then move the 1-Axis and teach one point.
 
-4. When teaching, try to keep the robot’s pose consistent.
+4. When teaching, try to keep the robot's pose consistent.
 
 <!-- ![](../../_assets/image10.png) -->
 

@@ -7,7 +7,7 @@
 3. Rotate the positioner approximately 30° in one direction and precisely teach three points to record the program. The teaching method is illustrated in the figure below.
   For a linear positioner, teach two points as far apart as possible using the same method.
 
-4. When teaching, try to keep the robot’s pose consistent.
+4. When teaching, try to keep the robot's pose consistent.
 
 <!-- ![](../../_assets/image9.png) -->
 
