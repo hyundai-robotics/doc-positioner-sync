@@ -174,7 +174,7 @@
 [__SOURCE](2-system_settings/2-2-robot-calibration.md)
 # 2.2 로봇 캘리브레이션
 
-[**${cont_model} 제어기 조작설명서 7.7장 자동 캘리브레이션**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-setting/7-auto-calibration/README?cont_model=${cont_model})을 참고하십시오.
+[${cont_model} 제어기 조작설명서 7.7장 자동 캘리브레이션](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-setting/7-auto-calibration/README?cont_model=${cont_model})을 참고하십시오.
 [__SOURCE](2-system_settings/2-3-positioner-calibration/README.md)
 # 2.3 포지셔너 캘리브레이션
   
@@ -229,7 +229,7 @@
 </p>   
 </br>
 
-3. 캘리브레이션 결과가 표시됩니다. 우측의 『확인』키를 누르면 해당 데이터 설정이 완료됩니다. 
+3. 캘리브레이션 결과가 표시됩니다. 우측의 `[확인]`키를 누르면 해당 데이터 설정이 완료됩니다. 
 
 <!-- ![](../../_assets/image12.png) -->
 <p align="center">
@@ -238,9 +238,9 @@
 </p>   
 </br>
 
-4. 사용자가 캐드데이터로 포지셔너의 위치를 정확히 알고 있는 경우 수동으로 포지셔너의 위치 및 DH파라미터를 설정한 후 『확인』키를 누르면 마찬가지로 데이터 설정이 반영됩니다.
+4. 사용자가 캐드데이터로 포지셔너의 위치를 정확히 알고 있는 경우 수동으로 포지셔너의 위치 및 DH파라미터를 설정한 후 `[확인]`키를 누르면 마찬가지로 데이터 설정이 반영됩니다.
 
-5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다. `3.2장 포지셔너 동기 조그 모드`(https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/3-manual-operation/3-2-positioner-sync-jog-mode)
+5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다. `3.2장 포지셔너 동기 조그 모드`(https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
 [__SOURCE](2-system_settings/2-3-positioner-calibration/4_posi_calib.md)
 # 2.3.4 posi_calib
 포지셔너가 로봇과 동기동작을 하기 위해 필요한 포지셔너 캘리브레이션을 수행하는 명령입니다. 
@@ -248,7 +248,7 @@
 ### 설명
 일반적으로 포지셔너 캘리브레이션은 설정 대화상자를 통해 수행합니다. 그러나, 서보툴 체인지로 포지셔너가 변경되는 경우에는 로봇 운전 중 캘리브레이션이 변경되어야 합니다. 이를 로봇 프로그램 상에서 수행하기 위한 명령입니다. 
 
-[**3.2장 포지셔너 동기 조그 모드**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다.
+[3.2장 포지셔너 동기 조그 모드](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다.
 
 ### 문법
 
