@@ -10,7 +10,7 @@
 </p>   
 </br>
 
-3. The calibration results will be displayed. Press the "✅OK" button on the right to finalize the data settings.
+3. The calibration results will be displayed. Press the `[OK]` button on the right to finalize the data settings.
 
 <!-- ![](../../_assets/image12.png) -->
 <p align="center">
@@ -19,6 +19,6 @@
 </p>   
 </br>
 
-4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the "✅OK" button will apply the data settings accordingly.
+4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the `[OK]` button will apply the data settings accordingly.
 
 5. You can verify whether the calibration was performed correctly at the following link: `3.2 Positioner Synchronized Jog Mode`(https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
