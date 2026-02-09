@@ -1,6 +1,6 @@
 ﻿
 [__SOURCE](README.md)
-# ${cont_model} Functional Manual - positioner sync.
+# ${cont_model} Function Manual - positioner sync.
 
 [__SOURCE](1-intro/README.md)
 # 1. Overview
@@ -177,7 +177,7 @@ Key functional specifications are as follows:
 [__SOURCE](2-system_settings/2-2-robot-calibration.md)
 # 2.2 Robot Calibration
 
-Please refer to the following: [**${cont_model} Controller Operation Manual 7.7 Auto Calibration**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/README?cont_model=${cont_model})
+Please refer to the following: [${cont_model} Controller Operation Manual 7.7 Auto Calibration](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/README?cont_model=${cont_model})
 [__SOURCE](2-system_settings/2-3-positioner-calibration/README.md)
 # 2.3 Positioner Calibration
 
@@ -246,7 +246,7 @@ Please refer to the following: [**${cont_model} Controller Operation Manual 7.7 
 </p>   
 </br>
 
-3. The calibration results will be displayed. Press the "✅OK" button on the right to finalize the data settings.
+3. The calibration results will be displayed. Press the `[OK]` button on the right to finalize the data settings.
 
 <!-- ![](../../_assets/image12.png) -->
 <p align="center">
@@ -255,7 +255,7 @@ Please refer to the following: [**${cont_model} Controller Operation Manual 7.7 
 </p>   
 </br>
 
-4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the "✅OK" button will apply the data settings accordingly.
+4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the `[OK]` button will apply the data settings accordingly.
 
 5. You can verify whether the calibration was performed correctly at the following link: `3.2 Positioner Synchronized Jog Mode`(https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
 
@@ -269,7 +269,7 @@ This command performs the positioner calibration required for the positioner to 
 
 Generally, positioner calibration is performed through the settings dialog. However, when the positioner is changed due to a servo tool change, calibration must be updated during robot operation. This command is used to perform calibration within the robot program.
 
-You can verify whether the calibration was performed correctly at the following link: [**3.2 Positioner Synchronized Jog Mode**](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
+You can verify whether the calibration was performed correctly at the following link: [3.2 Positioner Synchronized Jog Mode](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
 
 
 ### Syntax
@@ -495,3 +495,45 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
     end
 
 ```
+
+[__SOURCE](5-add-axis-move-independent-execution/README.md)
+# 5. Independent Execution of Auxiliary Axis Movement
+
+
+The Independent Auxiliary Axis Movement function enables the auxiliary axis to execute move commands independently from the robot in response to external input signals.
+[__SOURCE](5-add-axis-move-independent-execution/5-1-system-setting.md)
+# 5.1 System Settings
+
+1. Navigate to the `System - Application Parameter - Command Independent execution`.  
+![](../_assets/5_1_1_en.png)  
+    - Input Signal  
+    Configure the signal input to the controller.
+
+    - Command  
+    Specify the command to be executed when the input signal changes from OFF to ON. For independent operation of the positioner, a move command is used.  
+
+    - Ouput Singal under Execution  
+    This signal turns On when execution of the specified command starts and turns OFF when execution is completed.  
+
+    - Output Signal After Execution Completed  
+    This signal turns OFF when execution of the specified command starts and turns ON when execution is completed.  
+    For more details on Independent Command Execution, refer to [${cont_model} Controller Operation Manual - 7.5.10 Command independent execution](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/5-application-parameter/10-cmd-idp-exe?cont_model=${cont_model}).  
+  
+2. In the Command field, press the button below to enter a move command. To execute an auxiliary axis move independently, the mechanism must be specified in the move command.  
+    For more details on entering move commands, refer to [${cont_model} Controller Operation Manual - Robot Language HRScript - 5.1 Pose](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/1-pose?cont_model=${cont_model}).  
+
+3. Set the axis to be operated independently using the axisctrl off command. The axisctrl command is used to select whether an auxiliary axis is controlled by the task program. An axis set to axisctrl off does not move to the positions recorded in the task program and can be moved independently. An axis set to axisctrl on moves according to the positions recorded in the task program.  
+    Independent execution of move commands by external input signals is valid only in the section between axisctrl off and axisctrl on. When an input signal specified in Independent Command Execution is received while axisctrl off is active, the move command is executed. Axes set to axisctrl off are displayed in yellow text, such as j_7 shown at the top of the figure below.  
+    ![](../_assets/5_1_2_en.png)  
+    For more details, refer to [${cont_model} Controller Manual - Multi-tasking - 2.1.6 axisctrl](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/2-related-function/2-1-command-sentence/6-axisctrl?cont_model=${cont_model}).  
+
+
+{% hint style="warning" %}  
+
+1. The mechanism specified in the move command for Independent Command Execution must consist only of axes set to axisctrl off.
+
+2. If the axisctrl on command is executed before the independent execution is completed, the error **'E1455 (Axis 0) Independent operation not completed'** occurs and the robot axes are stopped. In this case, the independently operated axis continues moving to its target position.  
+
+    This occurs because the execution time of the robot task program is shorter than the execution time of the independent move command. Modify the program accordingly, or insert a wait command before the axisctrl on command to check whether the independent execution completion signal has been output.
+
+{% endhint %}

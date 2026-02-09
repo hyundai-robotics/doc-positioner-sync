@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [${cont_model} Manual - Positioner sync.](README.md)
+* [${cont_model} Funtion Manual - Positioner sync.](README.md)
 * [1. Overview](1-intro/README.md)
   * [1.1 Major Functions](1-intro/1-1-major-functions.md)
   * [1.2 Operation Sequence](1-intro/1-2-operation-sequence.md)
@@ -19,3 +19,6 @@
   * [4.1 Step Recording](4-program-creation/4-1-step-recording.md)
   * [4.2 Smov](4-program-creation/4-2-smov.md)
   * [4.3 Positioner Linear Interpolation Example](4-program-creation/4-3-positioner-linear-interpolation-example.md)
+
+* [5. Independent Execution of Auxiliary Axis Movement](5-add-axis-move-independent-execution/README.md)
+  * [5.1 System Settings](5-add-axis-move-independent-execution/5-1-system-setting.md)

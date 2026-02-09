@@ -1,1 +1,1 @@
-﻿# ${cont_model} Functional Manual - positioner sync.
+﻿# ${cont_model} Function Manual - positioner sync.

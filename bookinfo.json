@@ -1,7 +1,7 @@
 ﻿{
     "langCode": "en",
     "series": "${cont_model} Controller",
-    "title": "Functional Manual - positioner sync.",
+    "title": "Function Manual - positioner sync.",
     "publisher": "HD Hyundai Robotics",
     "tocTitle": "Table of Contents",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
