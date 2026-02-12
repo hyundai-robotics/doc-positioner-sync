@@ -197,7 +197,7 @@
 <!-- ![](../../_assets/image9.png) -->
 
 <p align="center">
- <img src="../../_assets/2_3_1.png" width="70%"></img>
+ <img src="../../_assets/2_3_1.png"></img>
  <em><p align="center">그림 2.3.1. 1축 포지셔너 캘리브레이션 교시 방법</p></em>
 </p>   
 </br>
