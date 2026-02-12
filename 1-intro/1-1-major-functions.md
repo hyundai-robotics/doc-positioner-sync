@@ -2,7 +2,7 @@
 
 * <mark style="color:green;">**Multi-group Positioner**</mark>
 
-  Control by setting the jig set as an auxiliary axis as a positioner group. A total of three groups of positioners can be registered, each group can be set up to 2-axis positioners.
+  Control by setting the jig set as an additional axis as a positioner group. A total of three groups of positioners can be registered, each group can be set up to 2-axis positioners.
 
 * <mark style="color:green;">**position calibration**</mark>
 
@@ -10,7 +10,7 @@
 
 * <mark style="color:green;">**Teaching**</mark>
 
-  The teaching of the positioner independent operation function is designed to be switched to robot orthogonal coordinate system, positioner synchronous jog, auxiliary axis operation, etc. by the selection of auxiliary axis keys, which is convenient for teaching positioner synchronous operation commands(smov).
+  The teaching of the positioner independent operation function is designed to be switched to robot orthogonal coordinate system, positioner synchronous jog, additional axis operation, etc. by the selection of additional axis keys, which is convenient for teaching positioner synchronous operation commands(smov).
 
 * <mark style="color:green;">**Execution**</mark>
 

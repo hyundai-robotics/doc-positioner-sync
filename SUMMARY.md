@@ -20,5 +20,5 @@
   * [4.2 Smov](4-program-creation/4-2-smov.md)
   * [4.3 Positioner Linear Interpolation Example](4-program-creation/4-3-positioner-linear-interpolation-example.md)
 
-* [5. Independent Execution of Auxiliary Axis Movement](5-add-axis-move-independent-execution/README.md)
+* [5. Independent Execution of Additional Axis Movement](5-add-axis-move-independent-execution/README.md)
   * [5.1 System Settings](5-add-axis-move-independent-execution/5-1-system-setting.md)

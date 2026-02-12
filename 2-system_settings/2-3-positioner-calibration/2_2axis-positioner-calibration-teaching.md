@@ -14,7 +14,7 @@
 <!-- ![](../../_assets/image10.png) -->
 
 <p align="center">
- <img src="../../_assets/2_3_2.png" width="80%"></img>
+ <img src="../../_assets/2_3_2.png" width="70%"></img>
  <em><p align="center">Figure 2.3.2. Teaching the 2-Axis Positioner Calibration</p></em>
 </p>   
 </br>

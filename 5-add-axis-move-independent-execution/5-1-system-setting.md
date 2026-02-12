@@ -15,10 +15,10 @@
     This signal turns OFF when execution of the specified command starts and turns ON when execution is completed.  
     For more details on Independent Command Execution, refer to [${cont_model} Controller Operation Manual - 7.5.10 Command independent execution](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/5-application-parameter/10-cmd-idp-exe?cont_model=${cont_model}).  
   
-2. In the Command field, press the button below to enter a move command. To execute an auxiliary axis move independently, the mechanism must be specified in the move command.  
+2. In the Command field, press the button below to enter a move command. To execute an additional axis move independently, the mechanism must be specified in the move command.  
     For more details on entering move commands, refer to [${cont_model} Controller Operation Manual - Robot Language HRScript - 5.1 Pose](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/1-pose?cont_model=${cont_model}).  
 
-3. Set the axis to be operated independently using the axisctrl off command. The axisctrl command is used to select whether an auxiliary axis is controlled by the task program. An axis set to axisctrl off does not move to the positions recorded in the task program and can be moved independently. An axis set to axisctrl on moves according to the positions recorded in the task program.  
+3. Set the axis to be operated independently using the axisctrl off command. The axisctrl command is used to select whether an additional axis is controlled by the task program. An axis set to axisctrl off does not move to the positions recorded in the task program and can be moved independently. An axis set to axisctrl on moves according to the positions recorded in the task program.  
     Independent execution of move commands by external input signals is valid only in the section between axisctrl off and axisctrl on. When an input signal specified in Independent Command Execution is received while axisctrl off is active, the move command is executed. Axes set to axisctrl off are displayed in yellow text, such as j_7 shown at the top of the figure below.  
     ![](../_assets/5_1_2_en.png)  
     For more details, refer to [${cont_model} Controller Manual - Multi-tasking - 2.1.6 axisctrl](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/2-related-function/2-1-command-sentence/6-axisctrl?cont_model=${cont_model}).  
