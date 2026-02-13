@@ -1,6 +1,7 @@
 ﻿# Table of contents
 
 * [${cont_model} Funtion Manual - Positioner sync.](README.md)
+* [Precautions](0-about-this-manual/precautions.md)
 * [1. Overview](1-intro/README.md)
   * [1.1 Major Functions](1-intro/1-1-major-functions.md)
   * [1.2 Operation Sequence](1-intro/1-2-operation-sequence.md)
