@@ -1,6 +1,7 @@
 ﻿# Table of contents
 
 * [${cont_model} 제어기 기능설명서 - 포지셔너 동기](README.md)
+* [사전 주의사항](0-about-this-manual/precautions.md)
 * [1. 개요](1-intro/README.md)
   * [1.1 주요 기능](1-intro/1-1-major-functions.md)
   * [1.2 조작 순서](1-intro/1-2-operation-sequence.md)
