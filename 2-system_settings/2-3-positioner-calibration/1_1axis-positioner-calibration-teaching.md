@@ -1,17 +1,18 @@
-﻿# 2.3.1 教导 1-Axis 位置器校准程序
+﻿# 2.3.1 Teaching the 1-Axis Positioner Calibration Program
 
-1. 选择要教授的程序。
+1. Select the program to be taught.
 
-2. 对于 1-Axis 位置器，在位置器上固定一个尖锐的教学点。将此教学点尽可能远离旋转中心，以提高校准精度，非常重要。
+2. For a 1-Axis positioner, fix a pointed teaching point on the positioner. It is important to place this teaching point as far as possible from the rotation center to improve callibration accuracy.
 
-3. 将位置器大约旋转 30° 在一个方向上，并精确地教授三个点以记录程序。教学方法在下图中说明。对于线性位置器，使用相同的方法尽可能远地教授两个点。
+3. Rotate the positioner approximately 30° in one direction and precisely teach three points to record the program. The teaching method is illustrated in the figure below.
+  For a linear positioner, teach two points as far apart as possible using the same method.
 
-4. 教学时，尽量保持机器人的姿态一致。
+4. When teaching, try to keep the robot's pose consistent.
 
 <!-- ![](../../_assets/image9.png) -->
 
 <p align="center">
  <img src="../../_assets/2_3_1.png"></img>
- <em><p align="center">图 2.3.1. 教导 1-Axis 位置器的校准</p></em>
+ <em><p align="center">Figure 2.3.1. Teaching the 1-Axis Positioner Calibration</p></em>
 </p>   
 </br>

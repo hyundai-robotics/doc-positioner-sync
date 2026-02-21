@@ -1,9 +1,13 @@
-﻿# 2.3 位置器校准
+﻿# 2.3 Positioner Calibration
 
-- 位置器校准是一种自动计算位置器的位置和运动方向的功能，使用机器人的 TCP 姿态。因此，为了从位置器校准中获得准确的结果，必须精确输入机器人的 TCP 姿态。作为初步步骤，可以利用 "`System > 6: Auto Calibration > Optimize axis origin and tool length`" 功能。
+- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot's TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot's TCP pose must be input precisely. As a preliminary step, the "`System > 6: Auto Calibration > Optimize axis origin and tool length`" function can be utilized.
 
-- 要使用位置器校准，必须为位置器轴分配一个组号。一个位置器组可以由最多 2 个轴组成，这些轴可以配置为旋转-旋转或线性-线性。
+- To use positioner calibration, a group number must be assigned to the positioner axis. A positioner group can consist of up to 2-axes, which can be configured as either rotary-rotary or linear-linear.
 
-- 位置器校准的基本原理是，对于由旋转轴构成的位置器，使用三个教学点的位置来形成一个圆，以计算旋转轴的位置。因此，每个旋转轴需要三个教学点来计算其中心。对于具有旋转轴的双轴位置器，使用一个共同的中间点，总共需要五个教学点，以计算每个旋转轴的位置和方向。对于由线性轴构成的位置器，由于仅计算轴方向，因此每个轴需要两个教学点。对于双轴线性位置器，共享中间点，从三个教学点计算每个轴的方向。
+- The basic principle of positioner calibration is that, for positioners composed of rotary axes, the positions of three taught points are used to form a circle to calculate the position of the rotation axis.
+  Therefore, three taught points per axis are required to calculate the center of each rotary axis.
+  In the case of a two-axis positioner with rotary axes, a common middle point is used, totaling five taught points, to calculate the position and direction of each rotation axis.
+  For positioners composed of linear axes, since only the axis direction is calculated, two taught points per axis are required.
+  For a two-axis linear positioner, the middle point is shared, and the direction of each axis is calculated from three taught points.
 
-- 程序教学后，可以从设置屏幕执行位置器校准或通过执行 ```posi_calib``` 过程。
+- After program teaching, positioner calibration can be performed from the settings screen or by executing the ```posi_calib``` procedure.

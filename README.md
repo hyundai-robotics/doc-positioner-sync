@@ -1,1 +1,1 @@
-﻿# ${cont_model} 功能手册 - 定位器同步.
+﻿# ${cont_model} Function Manual - positioner sync.

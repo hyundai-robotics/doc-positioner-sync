@@ -1,57 +1,59 @@
 ﻿# 2.3.4 posi_calib
 
-此命令执行位置器校准，使位置器与机器人同步操作。
+This command performs the positioner calibration required for the positioner to operate synchronously with the robot.
 
-### 描述
 
-通常，通过设置对话框执行位置器校准。然而，当由于伺服工具更换而更改位置器时，必须在机器人操作期间更新校准。此命令用于在机器人程序中执行校准。
+### Description
 
-您可以在以下链接验证校准是否正确执行：[3.2 位置器同步慢速模式](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
+Generally, positioner calibration is performed through the settings dialog. However, when the positioner is changed due to a servo tool change, calibration must be updated during robot operation. This command is used to perform calibration within the robot program.
 
-### 语法
+You can verify whether the calibration was performed correctly at the following link: [3.2 Positioner Synchronized Jog Mode](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
+
+
+### Syntax
 
 ```python
 posi_calib job=<calibration prog. no.>,s_=<station no.>
 ```
 
-### 参数
+### Parameters
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">项目</th>
-      <th style="text-align:left">含义</th>
-      <th style="text-align:left">备注</th>
+      <th style="text-align:left">Item</th>
+      <th style="text-align:left">Meaning</th>
+      <th style="text-align:left">Remarks</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">校准程序编号</td>
+      <td style="text-align:left">Calibration Program Number</td>
       <td style="text-align:left">
-        位置器校准程序编号
+        Positioner calibration program number
         (1 ~ 9999)
       </td>
-      <td style="text-align:left">变量</td>
+      <td style="text-align:left">Variable</td>
     </tr>
     <tr>
-      <td style="text-align:left">站点编号</td>
+      <td style="text-align:left">Station Number</td>
       <td style="text-align:left">
-        需要校准的站点编号
-      </td>
-      <td style="text-align:left">变量</td>
+        Station number to be calibrated
+      <td style="text-align:left">Variable</td>
     </tr>
   </tbody>
 </table>
 
-### 示例
+
+### Example
 ```python
-          # 位置器校准程序 (9995.job)
-     S1   move P,spd=100%,accu=1,tool=0 # 位置器校准的教学
-     S2   move P,spd=100%,accu=1,tool=0 # 位置器校准的教学
-     S3   move P,spd=100%,accu=1,tool=0 # 位置器校准的教学
+          # Program for positioner calibration (9995.job)
+     S1   move P,spd=100%,accu=1,tool=0 # Teaching for positioner calibration
+     S2   move P,spd=100%,accu=1,tool=0 # Teaching for positioner calibration
+     S3   move P,spd=100%,accu=1,tool=0 # Teaching for positioner calibration
 ```
 ```python
-          # 工具更换 + 定位器校准
+          # Tool change + positioner calibration
      S1   move P,spd=100%,accu=1,tool=0 
-          toolchng on,tg=P1,di=1        # 工具更换
-          posi_calib job=9995,s_=1      # 定位器校准
+          toolchng on,tg=P1,di=1        # Tool change
+          posi_calib job=9995,s_=1      # Positioner calibration
 ```

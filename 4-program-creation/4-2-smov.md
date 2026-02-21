@@ -4,11 +4,11 @@
 	smov {station number}, {interpolation method}, {speed}, {accuracy}, {tool number}
 ```
 
-- smov 命令的设置是在定位器坐标系统内确定的。
-  例如，当定位器移动时，沿直线移动两个点时，速度是指 TCP 相对于定位器的运动速度。
+- The settings of the smov command are determined within the positioner coordinate system.
+  For example, when moving two points in a straight line with the positioner moving, the speed refers to the TCP's movement speed relative to the positioner.
 
-1. 站号：指的是定位器组号 (S1 ~ S4)。
-2. 插值方法：可以对工件进行线性 (L) 或圆形 (C) 插值。
-3. 速度：设置机器人 TCP 在工件上移动的速度。
-4. 精度：设置工件上线性和圆形插值的精度。
-5. 工具号：设置用于操作的机器人工具号。
+1. Station number: Refers to the positioner group number (S1 ~ S4).
+2. Interpolation method: Linear(L) or circular(C) interpolation can be performed on the workpiece.
+3. Speed: Sets the speed at which the robot's TCP moves over the workpiece.
+4. Accuracy: Sets the accuracy for linear and circular interpolation over the workpiece.
+5. Tool number: Sets the robot tool number used for the operation.
