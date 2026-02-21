@@ -1,15 +1,15 @@
-﻿# 1. Overview
+﻿# 1. 概述
 
-Positioner Synchronization Function enables the robot to follow or perform linear or circular movements relative to an external jig unit installed outside the robot. This external jig unit appied to the positioner synchronization function is called the positioner, also known as the station.
+位置器同步功能使机器人能够相对于安装在机器人外部的外部夹具单元进行线性或圆周运动。应用于位置器同步功能的外部夹具单元称为位置器，也称为工作站。
 
-Applying this functions can compensate for work limitations caused by the robot's retricted working area. In other words, even if the workpiece is fixed on the positioner and the positioner moves, the robot tracks this movement and performs linear or circular movements on the workpiece.
+应用此功能可以弥补由于机器人的工作区域限制而导致的工作限制。换句话说，即使工件固定在位置器上，位置器移动，机器人也会跟踪这一移动，并在工件上执行线性或圆周运动。
 
-Key functional specifications are as follows: 
-| **Key Feature Specifications** | **Features** |
+主要功能规格如下：
+| **主要特征规格** | **特征** |
 | - | - |
-| Positioner Group | Group 1~4 Support |
-| Positioner axis | 1-axis, 2-axis Positioner Support(direct drive, rotation) |
-| Interpolation method | Support for linear, circular interpolation |
+| 位置器组 | 支持组 1~4 |
+| 位置器轴 | 支持1轴、2轴位置器（直接驱动，旋转） |
+| 插值方法 | 支持线性、圆周插值 |
 
 
 <br/>
@@ -19,18 +19,12 @@ Key functional specifications are as follows:
     <td align="center" width="50%">
       <img src="../_assets/1_0_1.png" alt="1-axis rotation positioner" width="97%" />
       <br />
-      <em>Figure 1.0.1. 1-axis rotation positioner</em>
+      <em>图 1.0.1. 1轴旋转位置器</em>
     </td>
     <td align="center" width="50%">
       <img src="../_assets/1_0_2.png" alt="2-axis rotation positioner" width="100%" />
       <br />
-      <em>Figure 1.0.2. 2-axis rotation positioner</em>
+      <em>图 1.0.2. 2轴旋转位置器</em>
     </td>
   </tr>
 </table>
-
-<!-- 
-| <img src="../_assets/1_0_1.png" height="447px" width="357px"> | <img src="../_assets/1_0_2.png" height="447px" width="357px"> |
-|:-: | :-:|             
-|1축 회전 포지셔너|  2축 회전 포지셔너   |
- -->

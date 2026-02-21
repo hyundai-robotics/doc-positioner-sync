@@ -1,5 +1,5 @@
-﻿# 3. Manual Operation
+﻿# 3. 手动操作
 
-There are two ways to jog the positioner:  <br/>
-- Independent Jog: Jogging the positioner alone.
-- Synchronized Jog: Jogging the positioner while the robot moves synchronously to follow it.
+有两种方法可以移动定位器： <br/>
+- 独立移动：单独移动定位器。
+- 同步移动：在机器人同步移动以跟随定位器时移动定位器。

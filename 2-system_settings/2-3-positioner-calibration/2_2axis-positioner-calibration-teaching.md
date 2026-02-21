@@ -1,20 +1,19 @@
-﻿# 2.3.2 Teaching the 2-Axis Positioner Calibration Program
+﻿# 2.3.2 教学 2 轴定位器校准程序
 
+1. 选择要教授的程序。
 
-1. Select the program to be taught.
+2. 将尖端教学点尽可能远离旋转中心。
 
-2. Place the pointed teaching point as far as possible from the rotation center.
+3. 对于 2 轴定位器，类似于 1 轴定位器，首先仅移动 2 轴并教授三个点。
+   然后，从第 3 个教学点（S3）开始，仅移动 1 轴以教授第 4（S4）和第 5（S5）个点。
+   对于线性定位器，在 2 轴上教授两个点，然后移动 1 轴并教授一个点。
 
-3. For a 2-axis positioner, similar to the 1-axis positioner, first move only the 2-Axis and teach three points.
-  Then, from the 3rd teaching point(S3), move only the 1-Axis to teach the 4th(S4) and 5th(S5) points.
-  For a linear positioner, teach two points on the 2-Axis, then move the 1-Axis and teach one point.
-
-4. When teaching, try to keep the robot's pose consistent.
+4. 教学时，尽量保持机器人姿态的一致性。
 
 <!-- ![](../../_assets/image10.png) -->
 
 <p align="center">
  <img src="../../_assets/2_3_2.png" width="70%"></img>
- <em><p align="center">Figure 2.3.2. Teaching the 2-Axis Positioner Calibration</p></em>
+ <em><p align="center">图 2.3.2. 教学 2 轴定位器校准</p></em>
 </p>   
 </br>
