@@ -5,7 +5,7 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
+{% include file="en/precautions.md" %}
 
 [__SOURCE](1-intro/README.md)
 # 1. Overview
@@ -261,7 +261,7 @@ Please refer to the following: [${cont_model} Controller Operation Manual 7.7 Au
 
 4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the `[OK]` button will apply the data settings accordingly.
 
-5. You can verify whether the calibration was performed correctly at the following link: [`3.2 Positioner Synchronized Jog Mode`](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
+5. You can verify whether the calibration was performed correctly at the following link: [`3.2 Positioner Synchronized Jog Mode`](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
 
 [__SOURCE](2-system_settings/2-3-positioner-calibration/4_posi_calib.md)
 # 2.3.4 posi_calib
@@ -273,7 +273,7 @@ This command performs the positioner calibration required for the positioner to 
 
 Generally, positioner calibration is performed through the settings dialog. However, when the positioner is changed due to a servo tool change, calibration must be updated during robot operation. This command is used to perform calibration within the robot program.
 
-You can verify whether the calibration was performed correctly at the following link: [3.2 Positioner Synchronized Jog Mode](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
+You can verify whether the calibration was performed correctly at the following link: [3.2 Positioner Synchronized Jog Mode](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
 
 
 ### Syntax
@@ -330,7 +330,7 @@ posi_calib job=<calibration prog. no.>,s_=<station no.>
 There are two ways to jog the positioner:  <br/>
 - Independent Jog: Jogging the positioner alone.
 - Synchronized Jog: Jogging the positioner while the robot moves synchronously to follow it.
-[__SOURCE](3-manual-operation/3_1-positioner-independent-jog-mode.md)
+[__SOURCE](3-manual-operation/3-1-positioner-independent-jog-mode.md)
 # 3.1 Positioner Independent Jog Mode
 
 The independent jog mode is toggled by pressing the "mech." key on the teach pendant. When set to this mode, the positioner can be jogged independently as shown below.
@@ -346,7 +346,7 @@ The independent jog mode is toggled by pressing the "mech." key on the teach pen
 - Coordinate system: Axis coordinate system (independent jog)
 - Recording condition: General move command
 
-[__SOURCE](3-manual-operation/3_2-positioner-sync-jog-mode.md)
+[__SOURCE](3-manual-operation/3-2-positioner-sync-jog-mode.md)
 # 3.2 Positioner Synchronized Jog Mode
 
 The positioner synchronized jog mode is available only after positioner calibration is completed.
