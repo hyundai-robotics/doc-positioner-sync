@@ -5,7 +5,7 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # 사전 주의사항
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/ko/precautions.md" %}
+{% include file="ko/precautions.md" %}
 
 [__SOURCE](1-intro/README.md)
 # 1. 개요
@@ -245,7 +245,8 @@
 
 4. 사용자가 캐드데이터로 포지셔너의 위치를 정확히 알고 있는 경우 수동으로 포지셔너의 위치 및 DH파라미터를 설정한 후 `[확인]`키를 누르면 마찬가지로 데이터 설정이 반영됩니다.
 
-5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다. `3.2장 포지셔너 동기 조그 모드`(https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
+5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다.  
+ [3.2장 포지셔너 동기 조그 모드](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
 [__SOURCE](2-system_settings/2-3-positioner-calibration/4_posi_calib.md)
 # 2.3.4 posi_calib
 포지셔너가 로봇과 동기동작을 하기 위해 필요한 포지셔너 캘리브레이션을 수행하는 명령입니다. 
@@ -307,7 +308,7 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 # 3. 수동 조작
 
 포지셔너를 조그하는 방법은 포지셔너만 조그하는 '단독 조그 방법'과 포지셔너를 조그하여 움직였을 때 로봇이 동기화 하여 따라오도록 하는 '동기 조그 방법' 두가지 방법이 있습니다.
-[__SOURCE](3-manual-operation/3_1-positioner-independent-jog-mode.md)
+[__SOURCE](3-manual-operation/3-1-positioner-independent-jog-mode.md)
 # 3.1 포지셔너 단독 조그 모드
 단독 조그 방법은 티칭 펜던트의 '메커니즘'키를 누르면 해당 메커니즘으로 토글되어 선택이 변경됩니다. 아래와 같은 상태에서 포지셔너는 단독으로 조그됩니다.
 
@@ -322,7 +323,7 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 - 포지셔너 메커니즘: J7+J8
 - 좌표계: 축 좌표계(단독 조그)
 - 기록 조건: 일반 move 명령
-[__SOURCE](3-manual-operation/3_2-positioner-sync-jog-mode.md)
+[__SOURCE](3-manual-operation/3-2-positioner-sync-jog-mode.md)
 # 3.2 포지셔너 동기 조그 모드
 포지셔너 동기조그는 포지셔너 캘리브레이션이 완료된 경우에만 사용 가능합니다. 
 포지셔너 단독 조그 상태에서, 티칭 펜던트의 '좌표계' 버튼을 누르면 '동기 S1'과 같이 표시됩니다. 이 상태에서 포지셔너를 움직이면 로봇이 포지셔너의 움직임에 따라오면서 조그 동작을 합니다. 
