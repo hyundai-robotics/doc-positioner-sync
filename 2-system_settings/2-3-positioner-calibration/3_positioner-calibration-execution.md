@@ -22,4 +22,4 @@
 4. 사용자가 캐드데이터로 포지셔너의 위치를 정확히 알고 있는 경우 수동으로 포지셔너의 위치 및 DH파라미터를 설정한 후 `[확인]`키를 누르면 마찬가지로 데이터 설정이 반영됩니다.
 
 5. 다음 링크에서 캘리브레이션이 정상적으로 수행되었는지 확인할 수 있습니다.  
- [3.2장 포지셔너 동기 조그 모드](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3_2-positioner-sync-jog-mode?cont_model=${cont_model})
+ [3.2장 포지셔너 동기 조그 모드](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
