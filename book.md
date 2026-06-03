@@ -209,8 +209,6 @@ Please refer to the following: [${cont_model} Controller Operation Manual 7.7 Au
 
 4. When teaching, try to keep the robot's pose consistent.
 
-<!-- ![](../../_assets/image9.png) -->
-
 <p align="center">
  <img src="../../_assets/2_3_1.png"></img>
  <em><p align="center">Figure 2.3.1. Teaching the 1-Axis Positioner Calibration</p></em>
@@ -230,7 +228,6 @@ Please refer to the following: [${cont_model} Controller Operation Manual 7.7 Au
 
 4. When teaching, try to keep the robot's pose consistent.
 
-<!-- ![](../../_assets/image10.png) -->
 
 <p align="center">
  <img src="../../_assets/2_3_2.png" width="70%"></img>
@@ -243,7 +240,6 @@ Please refer to the following: [${cont_model} Controller Operation Manual 7.7 Au
 1. Enter the `System > 4: Application parameters > 3: Positioner synchronization`.
 2. Select the station to be calibrated and click the calibration button to enter the taught program number.
 
-<!-- ![](../../_assets/image11.png) -->
 <p align="center">
  <img src="../../_assets/2_3_3_en.png" width="60%"></img>
  <em><p align="center">Figure 2.3.3. Executing Positioner Calibration</p></em>
@@ -252,7 +248,6 @@ Please refer to the following: [${cont_model} Controller Operation Manual 7.7 Au
 
 3. The calibration results will be displayed. Press the `[OK]` button on the right to finalize the data settings.
 
-<!-- ![](../../_assets/image12.png) -->
 <p align="center">
  <img src="../../_assets/2_3_4_en.png" width="60%"></img>
  <em><p align="center">Figure 2.3.4. Positioner Calibration Result</p></em>
@@ -335,7 +330,6 @@ There are two ways to jog the positioner:  <br/>
 
 The independent jog mode is toggled by pressing the "mech." key on the teach pendant. When set to this mode, the positioner can be jogged independently as shown below.
 
-<!-- ![](../_assets/image13.png) -->
 <p align="center">
  <img src="../_assets/3_1_1_en.png" width="60%"></img>
  <em><p align="center">Figure 3.1.1. Positioner Independent Jog method</p></em>
@@ -352,7 +346,6 @@ The independent jog mode is toggled by pressing the "mech." key on the teach pen
 The positioner synchronized jog mode is available only after positioner calibration is completed.
 While in the positioner independent jog mode, pressing the "crd.sys" button on the teach pendant will display "Synchronized S1". In this mode, when the positioner moves, the robot follows the positioner's movement and performs synchronized jogging.
 
-<!-- ![](../_assets/image14.png) -->
 <p align="center">
  <img src="../_assets/3_1_2_en.png" width="60%"></img>
  <em><p align="center">Figure 3.1.2. Positioner Synchronized Jog Method</p></em>
@@ -363,7 +356,6 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 - Coordinate system: Synchronized coordinate system (synchronized jog)
 - Recording condition: smov command
 
-<!-- ![](../_assets/image14-1.png) -->
 <p align="center">
  <img src="../_assets/3_1_3.png" width="60%"></img>
  <em><p align="center">Figure 3.1.3. Positioner Operation Simulation</p></em>
@@ -401,7 +393,6 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 
 1. Determine the start and target points on the workpiece.
 
-<!-- ![](../_assets/image15.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -414,7 +405,6 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 
 3. Use the Mechanism key and Coordinate System to set the mode to positioner synchronized jog. If the positioner being used is Station 1, select the coordinate system as "sync. S1".
 
-<!-- ![](../_assets/image16.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -425,7 +415,6 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 
 4. While the master is selected, if you move the positioner to the desired position, the robot will maintain its position and orientation relative to the working start point on the positioner.
 
-<!-- ![](../_assets/image17.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -438,7 +427,6 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 
 6. Switch the mechanism back to the robot, then use the jog key to move the robot to the target point (S2) and align it.
 
-<!-- ![](../_assets/image18.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -447,11 +435,10 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 </p>
 <br/>
 
-7. To record the synchronized step (smov), set the mode back to positioner synchronized jog and select the coordinate system as Synchronized S1, then press the "기록(record)" key to record the smov step.
+7. To record the synchronized step (smov), set the mode back to positioner synchronized jog and select the coordinate system as Synchronized S1, then press the "REC(record)" key to record the smov step.
 
 8. Follow steps ③→④→⑤ for subsequent steps.
 
-<!-- ![](../_assets/image19.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -463,7 +450,6 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 
 9. When the recorded program is executed, the positioner moves and the robot performs linear interpolation relative to the workpiece on the positioner.
 
-<!-- ![](../_assets/image20.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
   <em style="display: block; text-align: center; width: 50%; auto;">
