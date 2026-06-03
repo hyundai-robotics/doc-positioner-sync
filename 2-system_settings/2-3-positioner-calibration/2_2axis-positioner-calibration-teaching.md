@@ -11,7 +11,6 @@
 
 4. When teaching, try to keep the robot's pose consistent.
 
-<!-- ![](../../_assets/image10.png) -->
 
 <p align="center">
  <img src="../../_assets/2_3_2.png" width="70%"></img>

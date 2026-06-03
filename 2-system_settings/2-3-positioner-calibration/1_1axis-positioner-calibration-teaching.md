@@ -9,8 +9,6 @@
 
 4. When teaching, try to keep the robot's pose consistent.
 
-<!-- ![](../../_assets/image9.png) -->
-
 <p align="center">
  <img src="../../_assets/2_3_1.png"></img>
  <em><p align="center">Figure 2.3.1. Teaching the 1-Axis Positioner Calibration</p></em>

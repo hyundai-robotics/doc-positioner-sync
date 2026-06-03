@@ -3,7 +3,6 @@
 1. Enter the `System > 4: Application parameters > 3: Positioner synchronization`.
 2. Select the station to be calibrated and click the calibration button to enter the taught program number.
 
-<!-- ![](../../_assets/image11.png) -->
 <p align="center">
  <img src="../../_assets/2_3_3_en.png" width="60%"></img>
  <em><p align="center">Figure 2.3.3. Executing Positioner Calibration</p></em>
@@ -12,7 +11,6 @@
 
 3. The calibration results will be displayed. Press the `[OK]` button on the right to finalize the data settings.
 
-<!-- ![](../../_assets/image12.png) -->
 <p align="center">
  <img src="../../_assets/2_3_4_en.png" width="60%"></img>
  <em><p align="center">Figure 2.3.4. Positioner Calibration Result</p></em>
