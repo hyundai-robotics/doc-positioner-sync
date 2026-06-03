@@ -2,7 +2,6 @@
 
 1. 대상물 위에 시작점 및 목표점을 결정합니다.
 
-<!-- ![](../_assets/image15.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -15,7 +14,6 @@
 
 3. 메커니즘 키와 좌표계 키를 이용하여 포지셔너 동기 조그 모드로 설정합니다. 현재 작업하는 포지셔너가 스테이션 1일 경우 좌표계가 '동기 S1'이 되도록 선택합니다.
 
-<!-- ![](../_assets/image16.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -26,7 +24,6 @@
 
 4. 마스터를 선택한 상태에서 포지셔너의 위치를 희망하는 위치로 변경하면, 로봇은 포지셔너 위의 작업 시작점을 따라 자세와 위치가 유지됩니다.
 
-<!-- ![](../_assets/image17.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -39,7 +36,6 @@
 
 6. 메커니즘을 다시 로봇으로 선택한 다음, Jog키로 로봇을 '목표점'(S2)까지 이동하여 일치시킵니다.
 
-<!-- ![](../_assets/image18.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -52,7 +48,6 @@
 
 8. 이후의 스텝도 ③→④→⑤의 과정을 따릅니다.
 
-<!-- ![](../_assets/image19.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -64,7 +59,6 @@
 
 9. 기록된 프로그램을 실행하면, 포지셔너가 이동하고 로봇은 포지셔너 위의 작업물에 대해 직선 보간으로 이동합니다.
 
-<!-- ![](../_assets/image20.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
   <em style="display: block; text-align: center; width: 50%; auto;">
