@@ -179,7 +179,7 @@
 [__SOURCE](2-system_settings/2-2-robot-calibration.md)
 # 2.2 로봇 캘리브레이션
 
-[${cont_model} 제어기 조작설명서 7.7장 자동 캘리브레이션](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-setting/7-auto-calibration/README?cont_model=${cont_model})을 참고하십시오.
+[${cont_model} 제어기 조작설명서 7.7장 자동 캘리브레이션](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/7-auto-calibration/README?cont_model=${cont_model})을 참고하십시오.
 [__SOURCE](2-system_settings/2-3-positioner-calibration/README.md)
 # 2.3 포지셔너 캘리브레이션
   
@@ -199,8 +199,6 @@
 직동 포지셔너의 경우는 가능한 멀리 떨어진 2점을 상기와 같은 방법으로 교시 합니다. 
 4.	교시할 때 로봇의 자세는 가능하면 동일하게 합니다.
 
-<!-- ![](../../_assets/image9.png) -->
-
 <p align="center">
  <img src="../../_assets/2_3_1.png"></img>
  <em><p align="center">그림 2.3.1. 1축 포지셔너 캘리브레이션 교시 방법</p></em>
@@ -214,8 +212,6 @@
 3.	2축 포지셔너의 경우에는 1축 포지셔너와 마찬가지로 두번째 축만 움직여 3점을 우선 교시합니다. 이 후에 3번째 교시점(S3)에서 첫번째 축만 이동하여 4번째 점과(S4) 5번째 점을(S5) 교시합니다. 직동 포지셔너의 경우 두번째 축에 대해 2점 교시 후 첫번째 축에 대해 이동 후 한점을 교시합니다. 
 4.	교시를 할 때에는 로봇의 자세는 가능하면 변경하지 않고 교시하면 정확한 캘리브레이션이 됩니다.
 
-<!-- ![](../../_assets/image10.png) -->
-
 <p align="center">
  <img src="../../_assets/2_3_2.png" width="70%"></img>
  <em><p align="center">그림 2.3.2. 2축 포지셔너 캘리브레이션 교시 방법</p></em>
@@ -227,7 +223,6 @@
 1. `시스템 > 응용 파라미터 > 포지셔너 동기`로 진입합니다.
 2. 캘리브레이션 할 스테이션을 선택하고 캘리브레이션 버튼을 클릭하여 교시한 작업 프로그램 번호를 입력 합니다.
 
-<!-- ![](../../_assets/image11.png) -->
 <p align="center">
  <img src="../../_assets/2_3_3.png" width="60%"></img>
  <em><p align="center">그림 2.3.3. 포지셔너 캘리브레이션 실행</p></em>
@@ -236,7 +231,6 @@
 
 3. 캘리브레이션 결과가 표시됩니다. 우측의 `[확인]`키를 누르면 해당 데이터 설정이 완료됩니다. 
 
-<!-- ![](../../_assets/image12.png) -->
 <p align="center">
  <img src="../../_assets/2_3_4.png" width="60%"></img>
  <em><p align="center">그림 2.3.4. 포지셔너 캘리브레이션 결과</p></em>
@@ -312,7 +306,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 # 3.1 포지셔너 단독 조그 모드
 단독 조그 방법은 티칭 펜던트의 '메커니즘'키를 누르면 해당 메커니즘으로 토글되어 선택이 변경됩니다. 아래와 같은 상태에서 포지셔너는 단독으로 조그됩니다.
 
-<!-- ![](../_assets/image13.png) -->
 <p align="center">
  <img src="../_assets/3_1_1.png" width="60%"></img>
  <em><p align="center">그림 3.1.1. 포지셔너 단독 조그 방법</p></em>
@@ -328,7 +321,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 포지셔너 동기조그는 포지셔너 캘리브레이션이 완료된 경우에만 사용 가능합니다. 
 포지셔너 단독 조그 상태에서, 티칭 펜던트의 '좌표계' 버튼을 누르면 '동기 S1'과 같이 표시됩니다. 이 상태에서 포지셔너를 움직이면 로봇이 포지셔너의 움직임에 따라오면서 조그 동작을 합니다. 
 
-<!-- ![](../_assets/image14.png) -->
 <p align="center">
  <img src="../_assets/3_1_2.png" width="60%"></img>
  <em><p align="center">그림 3.1.2. 포지셔너 동기 조그 방법</p></em>
@@ -339,7 +331,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 - 좌표계: 동기 좌표계(동기 조그)
 - 기록 조건: smov 명령
 
-<!-- ![](../_assets/image14-1.png) -->
 <p align="center">
  <img src="../_assets/3_1_3.png" width="60%"></img>
  <em><p align="center">그림 3.1.3. 포지셔너 동작 시뮬레이션</p></em>
@@ -374,7 +365,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 
 1. 대상물 위에 시작점 및 목표점을 결정합니다.
 
-<!-- ![](../_assets/image15.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -387,7 +377,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 
 3. 메커니즘 키와 좌표계 키를 이용하여 포지셔너 동기 조그 모드로 설정합니다. 현재 작업하는 포지셔너가 스테이션 1일 경우 좌표계가 '동기 S1'이 되도록 선택합니다.
 
-<!-- ![](../_assets/image16.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -398,7 +387,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 
 4. 마스터를 선택한 상태에서 포지셔너의 위치를 희망하는 위치로 변경하면, 로봇은 포지셔너 위의 작업 시작점을 따라 자세와 위치가 유지됩니다.
 
-<!-- ![](../_assets/image17.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -411,7 +399,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 
 6. 메커니즘을 다시 로봇으로 선택한 다음, Jog키로 로봇을 '목표점'(S2)까지 이동하여 일치시킵니다.
 
-<!-- ![](../_assets/image18.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -424,7 +411,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 
 8. 이후의 스텝도 ③→④→⑤의 과정을 따릅니다.
 
-<!-- ![](../_assets/image19.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
@@ -436,7 +422,6 @@ posi_calib job=<캘리브레이션 프로그램 번호>,s_=<스테이션 번호>
 
 9. 기록된 프로그램을 실행하면, 포지셔너가 이동하고 로봇은 포지셔너 위의 작업물에 대해 직선 보간으로 이동합니다.
 
-<!-- ![](../_assets/image20.png) -->
 <p style="text-align: left;">
   <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
   <em style="display: block; text-align: center; width: 50%; auto;">
