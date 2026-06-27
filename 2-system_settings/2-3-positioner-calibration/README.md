@@ -1,13 +1,13 @@
-﻿# 2.3 Positioner Calibration
+﻿# 2.3 定位器校准
 
-- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot's TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot's TCP pose must be input precisely. As a preliminary step, the "`System > 6: Auto Calibration > Optimize axis origin and tool length`" function can be utilized.
+- 定位器校准是一种通过使用机器人的 TCP 姿态，自动计算定位器位置和移动方向的功能。因此，为了从定位器校准中获得准确的结果，机器人 TCP 姿态必须精确输入。作为初步步骤，可以利用“`System > 6: Auto Calibration > Optimize axis origin and tool length`”功能。
 
-- To use positioner calibration, a group number must be assigned to the positioner axis. A positioner group can consist of up to 2-axes, which can be configured as either rotary-rotary or linear-linear.
+- 要使用定位器校准，必须为定位器轴分配一个组号。一个定位器组可以包含多达 2 个轴，可以配置为旋转-旋转或线性-线性。
 
-- The basic principle of positioner calibration is that, for positioners composed of rotary axes, the positions of three taught points are used to form a circle to calculate the position of the rotation axis.
-  Therefore, three taught points per axis are required to calculate the center of each rotary axis.
-  In the case of a two-axis positioner with rotary axes, a common middle point is used, totaling five taught points, to calculate the position and direction of each rotation axis.
-  For positioners composed of linear axes, since only the axis direction is calculated, two taught points per axis are required.
-  For a two-axis linear positioner, the middle point is shared, and the direction of each axis is calculated from three taught points.
+- 定位器校准的基本原理是，对于由旋转轴组成的定位器，使用三个教学点的位置来形成一个圆，以计算旋转轴的位置。
+  因此，每个旋转轴需要三个教学点来计算各个旋转轴的中心。
+  在具有旋转轴的双轴定位器的情况下，使用一个共同的中间点，总共需要五个教学点，以计算每个旋转轴的位置和方向。
+  对于由线性轴组成的定位器，由于仅计算轴的方向，每个轴需要两个教学点。
+  对于一个双轴线性定位器，共享中间点，并从三个教学点计算每个轴的方向。
 
-- After program teaching, positioner calibration can be performed from the settings screen or by executing the ```posi_calib``` procedure.
+- 在程序教学之后，可以从设置屏幕或通过执行```posi_calib```程序进行定位器校准。

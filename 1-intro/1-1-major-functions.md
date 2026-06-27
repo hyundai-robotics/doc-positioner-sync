@@ -1,18 +1,17 @@
-﻿# 1.1 Key Features
+﻿# 1.1 关键特性
 
-* <mark style="color:green;">**Multi-group Positioner**</mark>
+* <mark style="color:green;">**多组定位器**</mark>
 
-  Control by setting the jig set as an additional axis as a positioner group. A total of three groups of positioners can be registered, each group can be set up to 2-axis positioners.
+  通过将夹具设置为额外轴作为定位器组进行控制。总共可以注册三组定位器，每组最多可以设置为2轴定位器。
 
-* <mark style="color:green;">**position calibration**</mark>
+* <mark style="color:green;">**位置校准**</mark>
 
-  To set the coordinate system for the positioner, calibration of the positioner is carried out through 3-points for the rotating 1-axis, 2-points for the 1-axis direct-acting positioner, and 5-points for the 2-axis direct-acting positioner.
+  为了设置定位器的坐标系统，定位器的校准通过旋转1轴的3个点、1轴直动定位器的2个点，以及2轴直动定位器的5个点进行。
 
-* <mark style="color:green;">**Teaching**</mark>
+* <mark style="color:green;">**教学**</mark>
 
-  The teaching of the positioner independent operation function is designed to be switched to robot orthogonal coordinate system, positioner synchronous jog, additional axis operation, etc. by the selection of additional axis keys, which is convenient for teaching positioner synchronous operation commands(smov).
+  定位器独立操作功能的教学设计为可通过选择额外轴键切换到机器人正交坐标系统、定位器同步慢走、额外轴操作等，这对于教学定位器同步操作命令(smov)非常方便。
 
-* <mark style="color:green;">**Execution**</mark>
+* <mark style="color:green;">**执行**</mark>
 
-  The positioner synchronization feature supports both linear and circular interpolation. When a synchronous operation command(smov) is executed, it is played running an interpolation operation on the positioner.
-  
+  定位器同步特性支持线性和圆形插补。当执行同步操作命令(smov)时，在定位器上运行插补操作。

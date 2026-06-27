@@ -1,34 +1,29 @@
 ﻿
 [__SOURCE](README.md)
-# ${cont_model} Function Manual - positioner sync.
-
+# ${cont_model} 功能手册 - 位置器同步.
 [__SOURCE](0-about-this-manual/README.md)
-# About the Manual
-
+# 关于手册
 [__SOURCE](0-about-this-manual/precautions.md)
-# Precautions
+# 注意事项
 
-{% include file="en/precautions.md" %}
-
+{% include file="zh/precautions.md" %}
 [__SOURCE](0-about-this-manual/safety-notice.md)
-# Safety Cautions
+# 安全注意事项
 
-{% include file="en/safety-notice.md" %}
-
+{% include file="zh/safety-notice.md" %}
 [__SOURCE](1-intro/README.md)
-# 1. Overview
+# 1. 概述
 
-Positioner Synchronization Function enables the robot to follow or perform linear or circular movements relative to an external jig unit installed outside the robot. This external jig unit appied to the positioner synchronization function is called the positioner, also known as the station.
+Positioner Synchronization Function 使机器人能够相对于安装在机器人外部的外部夹具单元执行线性或圆周运动。应用于位置器同步功能的外部夹具单元称为位置器，也称为站点。
 
-Applying this functions can compensate for work limitations caused by the robot's retricted working area. In other words, even if the workpiece is fixed on the positioner and the positioner moves, the robot tracks this movement and performs linear or circular movements on the workpiece.
+应用这些功能可以补偿由机器人的工作区域限制引起的工作限制。换句话说，即使工件固定在位置器上，而位置器移动，机器人也会跟踪这个运动并在工件上执行线性或圆周运动。
 
-Key functional specifications are as follows: 
-| **Key Feature Specifications** | **Features** |
+关键功能规格如下： 
+| **关键特性规格** | **特性** |
 | - | - |
-| Positioner Group | Group 1~4 Support |
-| Positioner axis | 1-axis, 2-axis Positioner Support(direct drive, rotation) |
-| Interpolation method | Support for linear, circular interpolation |
-
+| 位置器组 | 支持 1~4 组 |
+| 位置器轴 | 支持 1 轴、2 轴位置器（直接驱动，旋转） |
+| 插值方法 | 支持线性、圆形插值 |
 
 <br/>
 
@@ -37,12 +32,12 @@ Key functional specifications are as follows:
     <td align="center" width="50%">
       <img src="../_assets/1_0_1.png" alt="1-axis rotation positioner" width="97%" />
       <br />
-      <em>Figure 1.0.1. 1-axis rotation positioner</em>
+      <em>图 1.0.1. 1轴旋转位置器</em>
     </td>
     <td align="center" width="50%">
       <img src="../_assets/1_0_2.png" alt="2-axis rotation positioner" width="100%" />
       <br />
-      <em>Figure 1.0.2. 2-axis rotation positioner</em>
+      <em>图 1.0.2. 2轴旋转位置器</em>
     </td>
   </tr>
 </table>
@@ -50,336 +45,323 @@ Key functional specifications are as follows:
 <!-- 
 | <img src="../_assets/1_0_1.png" height="447px" width="357px"> | <img src="../_assets/1_0_2.png" height="447px" width="357px"> |
 |:-: | :-:|             
-|1축 회전 포지셔너|  2축 회전 포지셔너   |
+|1轴旋转位置器|  2轴旋转位置器   |
  -->
-
 [__SOURCE](1-intro/1-1-major-functions.md)
-# 1.1 Key Features
+# 1.1 关键特性
 
-* <mark style="color:green;">**Multi-group Positioner**</mark>
+* <mark style="color:green;">**多组定位器**</mark>
 
-  Control by setting the jig set as an additional axis as a positioner group. A total of three groups of positioners can be registered, each group can be set up to 2-axis positioners.
+  通过将夹具设置为额外轴作为定位器组进行控制。总共可以注册三组定位器，每组最多可以设置为2轴定位器。
 
-* <mark style="color:green;">**position calibration**</mark>
+* <mark style="color:green;">**位置校准**</mark>
 
-  To set the coordinate system for the positioner, calibration of the positioner is carried out through 3-points for the rotating 1-axis, 2-points for the 1-axis direct-acting positioner, and 5-points for the 2-axis direct-acting positioner.
+  为了设置定位器的坐标系统，定位器的校准通过旋转1轴的3个点、1轴直动定位器的2个点，以及2轴直动定位器的5个点进行。
 
-* <mark style="color:green;">**Teaching**</mark>
+* <mark style="color:green;">**教学**</mark>
 
-  The teaching of the positioner independent operation function is designed to be switched to robot orthogonal coordinate system, positioner synchronous jog, additional axis operation, etc. by the selection of additional axis keys, which is convenient for teaching positioner synchronous operation commands(smov).
+  定位器独立操作功能的教学设计为可通过选择额外轴键切换到机器人正交坐标系统、定位器同步慢走、额外轴操作等，这对于教学定位器同步操作命令(smov)非常方便。
 
-* <mark style="color:green;">**Execution**</mark>
+* <mark style="color:green;">**执行**</mark>
 
-  The positioner synchronization feature supports both linear and circular interpolation. When a synchronous operation command(smov) is executed, it is played running an interpolation operation on the positioner.
-  
+  定位器同步特性支持线性和圆形插补。当执行同步操作命令(smov)时，在定位器上运行插补操作。
 [__SOURCE](1-intro/1-2-operation-sequence.md)
-# 1.2 Operation Order
+# 1.2 操作顺序
 
 
 <p align="center">
  <img src="../_assets/1_2_1_en.png" width="60%"></img>
- <em><p align="center">Figure 1.2.1. Operation order</p></em>
+ <em><p align="center">图 1.2.1. 操作顺序</p></em>
 </p>   
 </br>
-
 [__SOURCE](2-system_settings/README.md)
-# 2. System Settings
+# 2. 系统设置
 [__SOURCE](2-system_settings/2-1-system-initialization.md)
-# 2.1 System Initialization
+# 2.1 系统初始化
 
-1. When setting up the controller for the first time, perform a system initialization.
-  navigate to `System > 5: Initialization > 1: System format` and press the initialize button.
+1. 第一次设置控制器时，执行系统初始化。
+  导航至 `System > 5: Initialization > 1: System format` 并按下初始化按钮。
 
 <!-- ![](../_assets/2_1_1.png) -->
 <p align="center">
  <img src="../_assets/2_1_1_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.1. System Initialization</p></em>
+ <em><p align="center">图 2.1.1. 系统初始化</p></em>
 </p>   
 </br>
 
-2. After System Initialization, select the robot type.
-  Once the robot type is selected, the screen shown bellow will apper. Enter the total number of additional axes to be used. After completing the settings, press the Confirm button.
+2. 系统初始化后，选择机器人类型。
+  一旦选择了机器人类型，下面将显示屏幕。输入要使用的附加轴的总数。完成设置后，按下确认按钮。
 
 <p align="center">
  <img src="../_assets/2_1_2_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.2. Robot type Select</p></em>
+ <em><p align="center">图 2.1.2. 选择机器人类型</p></em>
 </p>   
 </br>
 
 <!-- ![](../_assets/2_1_2.png)
 ![](../_assets/2_1_3.png) -->
 
-3. Power on the controller.
+3. 开启控制器电源。
 
 <p align="center">
  <img src="../_assets/2_1_3_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.3. Reboot</p></em>
+ <em><p align="center">图 2.1.3. 重启</p></em>
 </p>
 
-4. After the controller boots up, navigate to `System > 5: Initialization > 5: Additional axis parameter setting` to configure the additional axes.
-  On this screen, set the additional axes corresponding to positioners by selecting the axis specification as "Positioner" and configure the relevant parameters.
-  Depending on the configuration of the positioner axis, select either linear or rotary axis.
-  For linear axis, if the operating direction of the positioner axis is known relative to the robot base coordinates, specify the direction accordingly. If the exact direction is unknown, select arbitrarily.
-  For rotary axis, if the positioner is not a standard one provided by the manufacturer, set the axis configuration to "Custom" and configure the remaining parameters.
-  For detailed instructions on configuring additional axes, please refer to the [Additional Axis Function User Manual](https://hrbook-hrc.web.app/#/view/doc-add-axes/en/README?cont_model=${cont_model}).
-
+4. 控制器启动后，导航至 `System > 5: Initialization > 5: Additional axis parameter setting` 配置附加轴。
+  在此屏幕上，通过选择轴规格为“Positioner”并配置相关参数来设置对应于定位器的附加轴。
+  根据定位器轴的配置，选择线性或旋转轴。
+  对于线性轴，如果已知定位器轴相对于机器人基坐标的操作方向，请相应地指定方向。如果确切方向未知，请任意选择。
+  对于旋转轴，若定位器不是制造商提供的标准型，则将轴配置设置为“Custom”，并配置剩余参数。
+  有关配置附加轴的详细说明，请参阅 [附加轴功能用户手册](https://hrbook-hrc.web.app/#/view/doc-add-axes/zh/README?cont_model=${cont_model})。
 
 <!-- ![](../_assets/2_1_4.png)
 ![](../_assets/2_1_5.png) -->
 <p align="center">
  <img src="../_assets/2_1_4_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.4. Linear Axis Parameter Configuration</p></em>
+ <em><p align="center">图 2.1.4. 线性轴参数配置</p></em>
 </p>   
 </br>
 <p align="center">
  <img src="../_assets/2_1_5_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.5. Rotary Axis Parameter Configuration</p></em>
+ <em><p align="center">图 2.1.5. 旋转轴参数配置</p></em>
 </p>   
 </br>
 
-5. If the positioner is provided by our company, select the corresponding item from the axis configuration list.
-  In this case, there is no need to configure any other parameters.
+5. 如果定位器是我们公司提供的，请从轴配置列表中选择相应的项目。
+  在这种情况下，无需配置其他参数。
 
 <p align="center">
  <img src="../_assets/2_1_6_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.6. Standard Parameter Configuration</p></em>
+ <em><p align="center">图 2.1.6. 标准参数配置</p></em>
 </p>   
 </br>
 
 <!-- ![](../_assets/2_1_6.png) -->
 
-6. Navigate to `System > 4: Application parameters > 3: Positioner synchronization` to configure the positioner groups.
-  As an example, one 2-axis positioner and two 1-axis positioners are configured.
-  Since three stations are required, you need to add stations. Clicking the '+' button will create stations in the list window.
-  Select each station and enter the additional axis number to configure the station. For 1-axis positioners, enter the additional axis number only in the first field.
-  In the figure below, additional axes a1 and a2 correspond to the 2-axis positioner at Station 1, a3 corresponds to the 1-axis positioner at Station 2, and a4 corresponds to the 1-axis positioner at Station 3.
+6. 导航至 `System > 4: Application parameters > 3: Positioner synchronization` 配置定位器组。
+  作为示例，配置一个2轴定位器和两个1轴定位器。
+  由于需要三个站点，您需要添加站点。点击“+”按钮将在列表窗口中创建站点。
+  选择每个站点并输入附加轴编号以配置站点。对于1轴定位器，仅在第一个字段中输入附加轴编号。
+  在下图中，附加轴 a1 和 a2 对应于站点 1 的2轴定位器，a3 对应于站点 2 的1轴定位器，a4 对应于站点 3 的1轴定位器。
 
 <!-- ![](../_assets/2_1_7.png)  
 ![](../_assets/2_1_8.png)  
 ![](../_assets/2_1_9.png)   -->
 <p align="center">
  <img src="../_assets/2_1_7_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.7. Additional Axis a1, a2 Setting</p></em>
+ <em><p align="center">图 2.1.7. 附加轴 a1, a2 设置</p></em>
 </p>   
 </br>
 <p align="center">
  <img src="../_assets/2_1_8_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.8. Additional Axis a3 Setting</p></em>
+ <em><p align="center">图 2.1.8. 附加轴 a3 设置</p></em>
 </p>   
 </br>
 <p align="center">
  <img src="../_assets/2_1_9_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.9. Additional Axis a4 Setting</p></em>
+ <em><p align="center">图 2.1.9. 附加轴 a4 设置</p></em>
 </p>   
 </br>
 
-7. Navigate to `System > 5: Initialization > 6: Mechanism Settings` to configure the mechanism for jogging the positioner by each station.  
+7. 导航至 `System > 5: Initialization > 6: Mechanism Settings` 配置每个站点的定位器操控机制。  
 
 <!-- ![](../_assets/2_1_10.png) -->
 <p align="center">
  <img src="../_assets/2_1_10_en.png" width="60%"></img>
- <em><p align="center">Figure 2.1.10. Mechanism Setting</p></em>
+ <em><p align="center">图 2.1.10. 机制设置</p></em>
 </p>   
 </br>
 
 
-8. Power cycle the controller to apply the additional axis, station, and mechanism settings correctly.
-
-
+8. 请重启控制器以正确应用附加轴、站点和机制设置。
 [__SOURCE](2-system_settings/2-2-robot-calibration.md)
-# 2.2 Robot Calibration
+# 2.2 机器人校准
 
-Please refer to the following: [${cont_model} Controller Operation Manual 7.7 Auto Calibration](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/7-auto-calibration/README?cont_model=${cont_model})
+请参阅以下内容: [${cont_model} 控制器操作手册 7.7 自动校准](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/7-system/7-auto-calibration/README?cont_model=${cont_model})
 [__SOURCE](2-system_settings/2-3-positioner-calibration/README.md)
-# 2.3 Positioner Calibration
+# 2.3 定位器校准
 
-- Positioner calibration is a function that automatically calculates the position and movement direction of the positioner using the robot's TCP pose. Therefore, to obtain accurate results from positioner calibration, the robot's TCP pose must be input precisely. As a preliminary step, the "`System > 6: Auto Calibration > Optimize axis origin and tool length`" function can be utilized.
+- 定位器校准是一种通过使用机器人的 TCP 姿态，自动计算定位器位置和移动方向的功能。因此，为了从定位器校准中获得准确的结果，机器人 TCP 姿态必须精确输入。作为初步步骤，可以利用“`System > 6: Auto Calibration > Optimize axis origin and tool length`”功能。
 
-- To use positioner calibration, a group number must be assigned to the positioner axis. A positioner group can consist of up to 2-axes, which can be configured as either rotary-rotary or linear-linear.
+- 要使用定位器校准，必须为定位器轴分配一个组号。一个定位器组可以包含多达 2 个轴，可以配置为旋转-旋转或线性-线性。
 
-- The basic principle of positioner calibration is that, for positioners composed of rotary axes, the positions of three taught points are used to form a circle to calculate the position of the rotation axis.
-  Therefore, three taught points per axis are required to calculate the center of each rotary axis.
-  In the case of a two-axis positioner with rotary axes, a common middle point is used, totaling five taught points, to calculate the position and direction of each rotation axis.
-  For positioners composed of linear axes, since only the axis direction is calculated, two taught points per axis are required.
-  For a two-axis linear positioner, the middle point is shared, and the direction of each axis is calculated from three taught points.
+- 定位器校准的基本原理是，对于由旋转轴组成的定位器，使用三个教学点的位置来形成一个圆，以计算旋转轴的位置。
+  因此，每个旋转轴需要三个教学点来计算各个旋转轴的中心。
+  在具有旋转轴的双轴定位器的情况下，使用一个共同的中间点，总共需要五个教学点，以计算每个旋转轴的位置和方向。
+  对于由线性轴组成的定位器，由于仅计算轴的方向，每个轴需要两个教学点。
+  对于一个双轴线性定位器，共享中间点，并从三个教学点计算每个轴的方向。
 
-- After program teaching, positioner calibration can be performed from the settings screen or by executing the ```posi_calib``` procedure.
-
+- 在程序教学之后，可以从设置屏幕或通过执行```posi_calib```程序进行定位器校准。
 [__SOURCE](2-system_settings/2-3-positioner-calibration/1_1axis-positioner-calibration-teaching.md)
-# 2.3.1 Teaching the 1-Axis Positioner Calibration Program
+# 2.3.1 教学 1-Axis 位置器校准程序
 
-1. Select the program to be taught.
+1. 选择要教学的程序。
 
-2. For a 1-Axis positioner, fix a pointed teaching point on the positioner. It is important to place this teaching point as far as possible from the rotation center to improve callibration accuracy.
+2. 对于 1-Axis 位置器，在位置器上固定一个尖端教学点。将这个教学点尽可能远离旋转中心以提高校准准确性是很重要的。
 
-3. Rotate the positioner approximately 30° in one direction and precisely teach three points to record the program. The teaching method is illustrated in the figure below.
-  For a linear positioner, teach two points as far apart as possible using the same method.
+3. 将位置器在一个方向上旋转约 30°，并精确地教学三个点以记录程序。教学方法如下面的图所示。
+  对于线性位置器，使用相同的方法教学两个尽可能远的点。
 
-4. When teaching, try to keep the robot's pose consistent.
+4. 教学时，尽量保持机器人的姿态一致。
 
 <p align="center">
  <img src="../../_assets/2_3_1.png"></img>
- <em><p align="center">Figure 2.3.1. Teaching the 1-Axis Positioner Calibration</p></em>
+ <em><p align="center">图 2.3.1. 教学 1-Axis 位置器校准</p></em>
 </p>   
 </br>
 [__SOURCE](2-system_settings/2-3-positioner-calibration/2_2axis-positioner-calibration-teaching.md)
-# 2.3.2 Teaching the 2-Axis Positioner Calibration Program
+# 2.3.2 教学 2-轴定位器校准程序
 
 
-1. Select the program to be taught.
+1. 选择要教学的程序。
 
-2. Place the pointed teaching point as far as possible from the rotation center.
+2. 尽可能将指向的教学点放置在离旋转中心最远的位置。
 
-3. For a 2-axis positioner, similar to the 1-axis positioner, first move only the 2-Axis and teach three points.
-  Then, from the 3rd teaching point(S3), move only the 1-Axis to teach the 4th(S4) and 5th(S5) points.
-  For a linear positioner, teach two points on the 2-Axis, then move the 1-Axis and teach one point.
+3. 对于 2-轴定位器，类似于 1-轴定位器，首先仅移动 2-轴并教学三个点。
+  然后，从第三个教学点(S3)开始，仅移动 1-轴以教学第四(S4)和第五(S5)点。
+  对于线性定位器，先在 2-轴上教学两个点，然后移动 1-轴并教学一个点。
 
-4. When teaching, try to keep the robot's pose consistent.
+4. 教学时，尽量保持机器人的姿态一致。
 
 
 <p align="center">
  <img src="../../_assets/2_3_2.png" width="70%"></img>
- <em><p align="center">Figure 2.3.2. Teaching the 2-Axis Positioner Calibration</p></em>
+ <em><p align="center">图 2.3.2. 教学 2-轴定位器校准</p></em>
 </p>   
 </br>
 [__SOURCE](2-system_settings/2-3-positioner-calibration/3_positioner-calibration-execution.md)
-# 2.3.3 Executing Positioner Calibration
+# 2.3.3 执行定位器校准
 
-1. Enter the `System > 4: Application parameters > 3: Positioner synchronization`.
-2. Select the station to be calibrated and click the calibration button to enter the taught program number.
+1. 进入 `System > 4: Application parameters > 3: Positioner synchronization`。
+2. 选择要校准的站，并单击校准按钮以输入教导程序编号。
 
 <p align="center">
  <img src="../../_assets/2_3_3_en.png" width="60%"></img>
- <em><p align="center">Figure 2.3.3. Executing Positioner Calibration</p></em>
+ <em><p align="center">图 2.3.3. 执行定位器校准</p></em>
 </p>   
 </br>
 
-3. The calibration results will be displayed. Press the `[OK]` button on the right to finalize the data settings.
+3. 校准结果将显示。按右侧的 `[OK]` 按钮以最终确定数据设置。
 
 <p align="center">
  <img src="../../_assets/2_3_4_en.png" width="60%"></img>
- <em><p align="center">Figure 2.3.4. Positioner Calibration Result</p></em>
+ <em><p align="center">图 2.3.4. 定位器校准结果</p></em>
 </p>   
 </br>
 
-4. If the user knows the exact position of the positioner from CAD data, the position and DH parameters of the positioner can be manually set. Pressing the `[OK]` button will apply the data settings accordingly.
+4. 如果用户知道 CAD 数据中定位器的确切位置，可以手动设置定位器的位置和 DH 参数。按下 `[OK]` 按钮将相应地应用数据设置。
 
-5. You can verify whether the calibration was performed correctly at the following link: [`3.2 Positioner Synchronized Jog Mode`](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
-
+5. 您可以通过以下链接验证校准是否正确执行： [`3.2 位置器同步走动模式`](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
 [__SOURCE](2-system_settings/2-3-positioner-calibration/4_posi_calib.md)
 # 2.3.4 posi_calib
 
-This command performs the positioner calibration required for the positioner to operate synchronously with the robot.
+此命令执行位置器校准，以使位置器能够与机器人同步操作。
 
 
-### Description
+### 描述
 
-Generally, positioner calibration is performed through the settings dialog. However, when the positioner is changed due to a servo tool change, calibration must be updated during robot operation. This command is used to perform calibration within the robot program.
+通常，通过设置对话框执行位置器校准。然而，当由于伺服工具更换导致位置器更改时，必须在机器人操作期间更新校准。此命令用于在机器人程序中执行校准。
 
-You can verify whether the calibration was performed correctly at the following link: [3.2 Positioner Synchronized Jog Mode](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
+您可以在以下链接验证校准是否正确执行：[3.2 位置器同步走动模式](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/3-manual-operation/3-2-positioner-sync-jog-mode?cont_model=${cont_model})
 
 
-### Syntax
+### 语法
 
 ```python
-posi_calib job=<calibration prog. no.>,s_=<station no.>
+posi_calib job=<校准程序编号>,s_=<站点编号>
 ```
 
-### Parameters
+### 参数
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Meaning</th>
-      <th style="text-align:left">Remarks</th>
+      <th style="text-align:left">项目</th>
+      <th style="text-align:left">含义</th>
+      <th style="text-align:left">备注</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Calibration Program Number</td>
+      <td style="text-align:left">校准程序编号</td>
       <td style="text-align:left">
-        Positioner calibration program number
+        位置器校准程序编号
         (1 ~ 9999)
       </td>
-      <td style="text-align:left">Variable</td>
+      <td style="text-align:left">变量</td>
     </tr>
     <tr>
-      <td style="text-align:left">Station Number</td>
+      <td style="text-align:left">站点编号</td>
       <td style="text-align:left">
-        Station number to be calibrated
-      <td style="text-align:left">Variable</td>
+        需校准的站点编号
+      </td>
+      <td style="text-align:left">变量</td>
     </tr>
   </tbody>
 </table>
 
 
-### Example
+### 示例
 ```python
-          # Program for positioner calibration (9995.job)
-     S1   move P,spd=100%,accu=1,tool=0 # Teaching for positioner calibration
-     S2   move P,spd=100%,accu=1,tool=0 # Teaching for positioner calibration
-     S3   move P,spd=100%,accu=1,tool=0 # Teaching for positioner calibration
+          # 位置器校准程序 (9995.job)
+     S1   move P,spd=100%,accu=1,tool=0 # 位置器校准的教学
+     S2   move P,spd=100%,accu=1,tool=0 # 位置器校准的教学
+     S3   move P,spd=100%,accu=1,tool=0 # 位置器校准的教学
 ```
 ```python
-          # Tool change + positioner calibration
+          # 工具更换 + 位置器校准
      S1   move P,spd=100%,accu=1,tool=0 
-          toolchng on,tg=P1,di=1        # Tool change
-          posi_calib job=9995,s_=1      # Positioner calibration
+          toolchng on,tg=P1,di=1        # 工具更换
+          posi_calib job=9995,s_=1      # 位置器校准
 ```
-
 [__SOURCE](3-manual-operation/README.md)
-# 3. Manual Operation
+# 3. 手动操作
 
-There are two ways to jog the positioner:  <br/>
-- Independent Jog: Jogging the positioner alone.
-- Synchronized Jog: Jogging the positioner while the robot moves synchronously to follow it.
+有两种方式可以移动定位器： <br/>
+- 独立移动：单独移动定位器。
+- 同步移动：在机器人同步移动以跟随定位器的同时移动定位器。
 [__SOURCE](3-manual-operation/3-1-positioner-independent-jog-mode.md)
-# 3.1 Positioner Independent Jog Mode
+# 3.1 位置器独立操作模式
 
-The independent jog mode is toggled by pressing the "mech." key on the teach pendant. When set to this mode, the positioner can be jogged independently as shown below.
+独立操作模式通过按下教导 pendant 上的 "mech." 按键切换。当设置为此模式时，位置器可以独立操作，如下所示。
 
 <p align="center">
  <img src="../_assets/3_1_1_en.png" width="60%"></img>
- <em><p align="center">Figure 3.1.1. Positioner Independent Jog method</p></em>
+ <em><p align="center">图 3.1.1. 位置器独立操作方法</p></em>
 </p>   
 </br>
 
-- Positioner mechanism: J7 + J8
-- Coordinate system: Axis coordinate system (independent jog)
-- Recording condition: General move command
-
+- 位置器机制: J7 + J8
+- 坐标系统: 轴坐标系统（独立操作）
+- 记录条件: 一般移动命令
 [__SOURCE](3-manual-operation/3-2-positioner-sync-jog-mode.md)
-# 3.2 Positioner Synchronized Jog Mode
+# 3.2 位置器同步 jog 模式
 
-The positioner synchronized jog mode is available only after positioner calibration is completed.
-While in the positioner independent jog mode, pressing the "crd.sys" button on the teach pendant will display "Synchronized S1". In this mode, when the positioner moves, the robot follows the positioner's movement and performs synchronized jogging.
+位置器同步 jog 模式仅在完成位置器校准后可用。
+在位置器独立 jog 模式下，按下教学挂件上的“crd.sys”按钮将显示“Synchronized S1”。在此模式下，当位置器移动时，机器人会跟随位置器的运动并执行同步 jogging。
 
 <p align="center">
  <img src="../_assets/3_1_2_en.png" width="60%"></img>
- <em><p align="center">Figure 3.1.2. Positioner Synchronized Jog Method</p></em>
+ <em><p align="center">图 3.1.2. 位置器同步 jog 方法</p></em>
 </p>   
 </br>
 
-- Positioner mechanism: J7 + J8
-- Coordinate system: Synchronized coordinate system (synchronized jog)
-- Recording condition: smov command
+- 位置器机制：J7 + J8
+- 坐标系统：同步坐标系统（同步 jog）
+- 记录条件：smov 命令
 
 <p align="center">
  <img src="../_assets/3_1_3.png" width="60%"></img>
- <em><p align="center">Figure 3.1.3. Positioner Operation Simulation</p></em>
+ <em><p align="center">图 3.1.3. 位置器操作仿真</p></em>
 </p>   
 </br>
-
 [__SOURCE](4-program-creation/README.md)
-# 4. Programming
-
+# 4. 编程
 [__SOURCE](4-program-creation/4-1-step-recording.md)
-# 4.1 Step Recording
+# 4.1 步骤记录
 
-- In positioner independent jog mode, the program recording condition is set to the move command.
-- In positioner synchronized jog mode, the recording condition is set to the smov command to support positioner synchronized commands.
-
-
+- 在定位器独立的手动模式下，程序记录条件设置为移动命令。
+- 在定位器同步的手动模式下，记录条件设置为 smov 命令，以支持定位器同步命令。
 [__SOURCE](4-program-creation/4-2-smov.md)
 # 4.2 smov
 
@@ -387,151 +369,148 @@ While in the positioner independent jog mode, pressing the "crd.sys" button on t
 	smov {station number}, {interpolation method}, {speed}, {accuracy}, {tool number}
 ```
 
-- The settings of the smov command are determined within the positioner coordinate system.
-  For example, when moving two points in a straight line with the positioner moving, the speed refers to the TCP's movement speed relative to the positioner.
+- smov命令的设置是在定位器坐标系统内决定的。
+  例如，当定位器移动时，在两点之间直线移动，速度指的是TCP相对于定位器的移动速度。
 
-1. Station number: Refers to the positioner group number (S1 ~ S4).
-2. Interpolation method: Linear(L) or circular(C) interpolation can be performed on the workpiece.
-3. Speed: Sets the speed at which the robot's TCP moves over the workpiece.
-4. Accuracy: Sets the accuracy for linear and circular interpolation over the workpiece.
-5. Tool number: Sets the robot tool number used for the operation.
-
+1. 站号：指定位器组号（S1 ~ S4）。
+2. 插值方法：可对工件执行线性(L)或圆形(C)插值。
+3. 速度：设置机器人TCP在工件上的移动速度。
+4. 精度：设置对工件进行线性和圆形插值的精度。
+5. 工具号：设置用于操作的机器人工具号。
 [__SOURCE](4-program-creation/4-3-positioner-linear-interpolation-example.md)
-# 4.3 Example of Teaching Linear Interpolation on the Positioner
+# 4.3 在定位器上教学线性插值的示例
 
-1. Determine the start and target points on the workpiece.
+1. 确定工件上的起始点和目标点。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.1. Step 1
+    图 4.1.1. 第一步
   </em>
 </p>
 <br/>
 
-2. Using the Mechanism keys and Coordinate System, select the positioner and move it. Then, switch back to the robot using the Mechanism key and align the robot tool tip to the desired start point. In this state, press the "기록(record)" key to record a move command (use smov if necessary).
+2. 使用机制键和坐标系统，选择定位器并移动它。然后，使用机制键切换回机器人，将机器人工具末端对准所需的起始点。在此状态下，按下“记录(record)”键以记录移动命令（如有必要使用smov）。
 
-3. Use the Mechanism key and Coordinate System to set the mode to positioner synchronized jog. If the positioner being used is Station 1, select the coordinate system as "sync. S1".
+3. 使用机制键和坐标系统将模式设置为定位器同步走动。如果使用的定位器是站 1，选择坐标系统为“sync. S1”。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.2. Step 2~3
+    图 4.1.2. 第二步~第三步
   </em>
 </p>
 <br/>
 
-4. While the master is selected, if you move the positioner to the desired position, the robot will maintain its position and orientation relative to the working start point on the positioner.
+4. 当主控被选中时，如果你将定位器移动到所需位置，机器人将保持其相对于定位器上的工作起始点的位置和方向。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.3. Step 4
+    图 4.1.3. 第四步
   </em>
 </p>
 <br/>
 
-5. (Note) The error between a point on the positioner and the robot tool tip in this state is due to calibration errors between the robot and positioner. However, this error does not appear as a trajectory error during playback. In other words, even if some error exists, moving the robot again to the target position and recording with smov will result in minimal trajectory position errors during playback.
+5. （注意）在此状态下，定位器上的某个点与机器人工具末端之间的误差是由于机器人和定位器之间的校准误差。然而，在回放过程中，这种误差不会表现为轨迹误差。换句话说，即使存在一些误差，再次将机器人移动到目标位置并使用smov记录，将会在回放过程中产生最小的轨迹位置误差。
 
-6. Switch the mechanism back to the robot, then use the jog key to move the robot to the target point (S2) and align it.
+6. 切换机制回到机器人，然后使用走动键将机器人移动到目标点（S2）并对齐。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.4. Step 6
+    图 4.1.4. 第六步
   </em>
 </p>
 <br/>
 
-7. To record the synchronized step (smov), set the mode back to positioner synchronized jog and select the coordinate system as Synchronized S1, then press the "REC(record)" key to record the smov step.
+7. 要记录同步步骤（smov），将模式重新设置为定位器同步走动，选择坐标系统为同步 S1，然后按下“REC(record)”键以记录smov步骤。
 
-8. Follow steps ③→④→⑤ for subsequent steps.
+8. 按照步骤 ③→④→⑤ 进行后续步骤。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.5. Step 7~8
+    图 4.1.5. 第七步~第八步
   </em>
 </p>
 <br/>
 
 
-9. When the recorded program is executed, the positioner moves and the robot performs linear interpolation relative to the workpiece on the positioner.
+9. 当录制的程序被执行时，定位器移动，机器人相对于定位器上的工件执行线性插值。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
   <em style="display: block; text-align: center; width: 50%; auto;">
-    Figure 4.1.6. Step 9
+    图 4.1.6. 第九步
   </em>
 </p>
 <br/>
 
 
-`Caution`
-1) Recording positioner synchronized steps (smov) does not necessarily have to follow the exact method described above.
-  You can move the robot and positioner independently to set the position and orientation, then record the step as smov.
-  The robot will move according to the specified interpolation method relative to the workpiece on the positioner.
+`注意事项 (Caution)`
+1) 记录定位器同步步骤（smov）不一定要遵循上述确切的方法。
+  你可以独立移动机器人和定位器以设置位置和方向，然后将步骤记录为smov。
+  机器人将根据指定的插值方法相对于定位器上的工件移动。
 
-2) If two consecutive smov steps both use linear interpolation ("L"), cornering motion will be performed just like with move commands.
+2) 如果两个连续的smov步骤都使用线性插值（“L”），则将执行与移动命令相同的转角动作。
 
-3) The speed set in smov steps is the working speed.
-  Therefore, even if the positioner moves a lot, if the working distance between recorded steps on the workpiece is very short, the positioner's working speed may effectively become infinite(∞), causing it to move at its maximum speed.
-  To limit the positioner speed in such cases, set the speed unit to "SEC".
-  This means the step movement is based on time, not speed, so even if the distance on the workpiece is zero(0), the move time is specified.
+3) 在smov步骤中设置的速度是工作速度。
+  因此，即使定位器移动幅度很大，如果录制的步骤之间在工件上的工作距离非常短，定位器的工作速度可能有效地变为无限(∞)，导致其以最大速度移动。
+  为了在这种情况下限制定位器速度，将速度单位设置为“SEC”。
+  这意味着步骤移动是基于时间，而不是速度，因此即使工件上的距离为零(0)，移动时间也是被指定的。
 <br/><br/>
 
 
-`Example of Programming`
+`编程示例`
 ```py
 
-    S1   move  L,spd=60%,accu=1,tool=0        # Approach start position step
-    S2   smov  S1,L,spd=100mm/s,accu=1,tool=0    # Positioner synchronized linear interpolation
+    S1   move  L,spd=60%,accu=1,tool=0        # 接近起始位置步骤
+    S2   smov  S1,L,spd=100mm/s,accu=1,tool=0    # 定位器同步线性插值
     S3   smov  S1,L,spd=100mm/s,accu=1,tool=0
     S4   smov  S1,L,spd=100mm/s,accu=1,tool=0
-    S5   move  P,spd=10%,accu=1,tool=0        # Retract step (asynchronous with positioner)
+    S5   move  P,spd=10%,accu=1,tool=0        # 收回步骤（与定位器异步）
     S6   move  L,spd=200mm/s,accu=1,tool=0 
     end
 
 ```
-
 [__SOURCE](5-add-axis-move-independent-execution/README.md)
-# 5. Independent Execution of Additional Axis Movement
+# 5. 独立执行附加轴移动
 
-
-The Independent Additional Axis Movement function enables the additional axis to execute move commands independently from the robot in response to external input signals.
+独立附加轴移动功能使附加轴能够根据外部输入信号独立于机器人执行移动命令。
 [__SOURCE](5-add-axis-move-independent-execution/5-1-system-setting.md)
-# 5.1 System Settings
+# 5.1 系统设置
 
-1. Navigate to the `System - Application Parameter - Command Independent execution`.  
+1. 导航到 `系统 - 应用程序参数 - 独立执行命令 (System - Application Parameter - Command Independent execution)`。  
 ![](../_assets/5_1_1_en.png)  
-    - Input Signal  
-    Configure the signal input to the controller.
+    - 输入信号  
+    配置输入信号到控制器。
 
-    - Command  
-    Specify the command to be executed when the input signal changes from OFF to ON. For independent operation of the positioner, a move command is used.  
+    - 命令  
+    指定当输入信号从 OFF 变为 ON 时要执行的命令。独立操作位置器时，使用移动命令。  
 
-    - Ouput Singal under Execution  
-    This signal turns On when execution of the specified command starts and turns OFF when execution is completed.  
+    - 执行中的输出信号  
+    当指定的命令执行开始时，此信号打开，执行完成时关闭。  
 
-    - Output Signal After Execution Completed  
-    This signal turns OFF when execution of the specified command starts and turns ON when execution is completed.  
-    For more details on Independent Command Execution, refer to [${cont_model} Controller Operation Manual - 7.5.10 Command independent execution](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/5-application-parameter/10-cmd-idp-exe?cont_model=${cont_model}).  
+    - 执行完成后的输出信号  
+    当指定的命令执行开始时，此信号关闭，执行完成时打开。  
+    有关独立命令执行的更多详细信息，请参阅 [${cont_model} 控制器操作手册 - 7.5.10 独立命令执行](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/7-system/5-application-parameter/10-cmd-idp-exe?cont_model=${cont_model})。  
   
-2. In the Command field, press the button below to enter a move command. To execute an additional axis move independently, the mechanism must be specified in the move command.  
-    For more details on entering move commands, refer to [${cont_model} Controller Operation Manual - Robot Language HRScript - 5.1 Pose](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/1-pose?cont_model=${cont_model}).  
+2. 在命令字段中，按下面的按钮输入移动命令。要独立执行额外轴的移动，必须在移动命令中指定机制。  
+    有关输入移动命令的更多详细信息，请参阅 [${cont_model} 控制器操作手册 - 机器人语言 HRScript - 5.1 位姿](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/5-moving-robot/1-pose?cont_model=${cont_model})。  
 
-3. Set the axis to be operated independently using the axisctrl off command. The axisctrl command is used to select whether an additional axis is controlled by the task program. An axis set to axisctrl off does not move to the positions recorded in the task program and can be moved independently. An axis set to axisctrl on moves according to the positions recorded in the task program.  
-    Independent execution of move commands by external input signals is valid only in the section between axisctrl off and axisctrl on. When an input signal specified in Independent Command Execution is received while axisctrl off is active, the move command is executed. Axes set to axisctrl off are displayed in yellow text, such as j_7 shown at the top of the figure below.  
+3. 使用 axisctrl off 命令设置要独立操作的轴。axisctrl 命令用于选择额外轴是否由任务程序控制。设置为 axisctrl off 的轴不会移动到任务程序中记录的位置，可以独立移动。设置为 axisctrl on 的轴根据任务程序中记录的位置移动。  
+    通过外部输入信号独立执行移动命令仅在 axisctrl off 和 axisctrl on 之间的部分有效。当在 axisctrl off 活动时收到指定为独立命令执行的输入信号时，执行移动命令。设置为 axisctrl off 的轴显示为黄色文本，如下图顶部所示的 j_7。  
     ![](../_assets/5_1_2_en.png)  
-    For more details, refer to [${cont_model} Controller Manual - Multi-tasking - 2.1.6 axisctrl](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/2-related-function/2-1-command-sentence/6-axisctrl?cont_model=${cont_model}).  
+    有关更多详细信息，请参阅 [${cont_model} 控制器手册 - 多任务处理 - 2.1.6 axisctrl](https://hrbook-hrc.web.app/#/view/doc-multi-task/zh/2-related-function/2-1-command-sentence/6-axisctrl?cont_model=${cont_model})。  
 
 
 {% hint style="warning" %}  
 
-1. The mechanism specified in the move command for Independent Command Execution must consist only of axes set to axisctrl off.
+1. 独立命令执行中指定的移动命令的机制必须只由设置为 axisctrl off 的轴组成。
 
-2. If the axisctrl on command is executed before the independent execution is completed, the error **'E1455 (Axis 0) Independent operation not completed'** occurs and the robot axes are stopped. In this case, the independently operated axis continues moving to its target position.  
+2. 如果在独立执行完成之前执行 axisctrl on 命令，将发生错误 **'E1455 (Axis 0) 独立操作未完成'**，机器人轴将停止。在这种情况下，独立操作的轴将继续移动到其目标位置。  
 
-    This occurs because the execution time of the robot task program is shorter than the execution time of the independent move command. Modify the program accordingly, or insert a wait command before the axisctrl on command to check whether the independent execution completion signal has been output.
+    这种情况发生是因为机器人任务程序的执行时间短于独立移动命令的执行时间。相应修改程序，或在 axisctrl on 命令之前插入等待命令，以检查独立执行完成信号是否已输出。
 
 {% endhint %}

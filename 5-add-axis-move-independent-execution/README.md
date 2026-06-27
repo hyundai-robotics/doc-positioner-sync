@@ -1,4 +1,3 @@
-﻿# 5. Independent Execution of Additional Axis Movement
+﻿# 5. 独立执行附加轴移动
 
-
-The Independent Additional Axis Movement function enables the additional axis to execute move commands independently from the robot in response to external input signals.
+独立附加轴移动功能使附加轴能够根据外部输入信号独立于机器人执行移动命令。

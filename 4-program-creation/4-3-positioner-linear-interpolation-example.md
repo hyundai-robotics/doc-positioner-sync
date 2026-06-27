@@ -1,95 +1,95 @@
-﻿# 4.3 Example of Teaching Linear Interpolation on the Positioner
+﻿# 4.3 在定位器上教学线性插值的示例
 
-1. Determine the start and target points on the workpiece.
+1. 确定工件上的起始点和目标点。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_1.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.1. Step 1
+    图 4.1.1. 第一步
   </em>
 </p>
 <br/>
 
-2. Using the Mechanism keys and Coordinate System, select the positioner and move it. Then, switch back to the robot using the Mechanism key and align the robot tool tip to the desired start point. In this state, press the "기록(record)" key to record a move command (use smov if necessary).
+2. 使用机制键和坐标系统，选择定位器并移动它。然后，使用机制键切换回机器人，将机器人工具末端对准所需的起始点。在此状态下，按下“记录(record)”键以记录移动命令（如有必要使用smov）。
 
-3. Use the Mechanism key and Coordinate System to set the mode to positioner synchronized jog. If the positioner being used is Station 1, select the coordinate system as "sync. S1".
+3. 使用机制键和坐标系统将模式设置为定位器同步走动。如果使用的定位器是站 1，选择坐标系统为“sync. S1”。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_2.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.2. Step 2~3
+    图 4.1.2. 第二步~第三步
   </em>
 </p>
 <br/>
 
-4. While the master is selected, if you move the positioner to the desired position, the robot will maintain its position and orientation relative to the working start point on the positioner.
+4. 当主控被选中时，如果你将定位器移动到所需位置，机器人将保持其相对于定位器上的工作起始点的位置和方向。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_3.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.3. Step 4
+    图 4.1.3. 第四步
   </em>
 </p>
 <br/>
 
-5. (Note) The error between a point on the positioner and the robot tool tip in this state is due to calibration errors between the robot and positioner. However, this error does not appear as a trajectory error during playback. In other words, even if some error exists, moving the robot again to the target position and recording with smov will result in minimal trajectory position errors during playback.
+5. （注意）在此状态下，定位器上的某个点与机器人工具末端之间的误差是由于机器人和定位器之间的校准误差。然而，在回放过程中，这种误差不会表现为轨迹误差。换句话说，即使存在一些误差，再次将机器人移动到目标位置并使用smov记录，将会在回放过程中产生最小的轨迹位置误差。
 
-6. Switch the mechanism back to the robot, then use the jog key to move the robot to the target point (S2) and align it.
+6. 切换机制回到机器人，然后使用走动键将机器人移动到目标点（S2）并对齐。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_4.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.4. Step 6
+    图 4.1.4. 第六步
   </em>
 </p>
 <br/>
 
-7. To record the synchronized step (smov), set the mode back to positioner synchronized jog and select the coordinate system as Synchronized S1, then press the "REC(record)" key to record the smov step.
+7. 要记录同步步骤（smov），将模式重新设置为定位器同步走动，选择坐标系统为同步 S1，然后按下“REC(record)”键以记录smov步骤。
 
-8. Follow steps ③→④→⑤ for subsequent steps.
+8. 按照步骤 ③→④→⑤ 进行后续步骤。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_5.png" width="40%" style="display: block;" />
   <em style="display: block; text-align: center; width: 40%; auto;">
-    Figure 4.1.5. Step 7~8
+    图 4.1.5. 第七步~第八步
   </em>
 </p>
 <br/>
 
 
-9. When the recorded program is executed, the positioner moves and the robot performs linear interpolation relative to the workpiece on the positioner.
+9. 当录制的程序被执行时，定位器移动，机器人相对于定位器上的工件执行线性插值。
 
 <p style="text-align: left;">
   <img src="../_assets/4_1_6.png" width="50%" style="display: block;" />
   <em style="display: block; text-align: center; width: 50%; auto;">
-    Figure 4.1.6. Step 9
+    图 4.1.6. 第九步
   </em>
 </p>
 <br/>
 
 
-`Caution`
-1) Recording positioner synchronized steps (smov) does not necessarily have to follow the exact method described above.
-  You can move the robot and positioner independently to set the position and orientation, then record the step as smov.
-  The robot will move according to the specified interpolation method relative to the workpiece on the positioner.
+`注意事项 (Caution)`
+1) 记录定位器同步步骤（smov）不一定要遵循上述确切的方法。
+  你可以独立移动机器人和定位器以设置位置和方向，然后将步骤记录为smov。
+  机器人将根据指定的插值方法相对于定位器上的工件移动。
 
-2) If two consecutive smov steps both use linear interpolation ("L"), cornering motion will be performed just like with move commands.
+2) 如果两个连续的smov步骤都使用线性插值（“L”），则将执行与移动命令相同的转角动作。
 
-3) The speed set in smov steps is the working speed.
-  Therefore, even if the positioner moves a lot, if the working distance between recorded steps on the workpiece is very short, the positioner's working speed may effectively become infinite(∞), causing it to move at its maximum speed.
-  To limit the positioner speed in such cases, set the speed unit to "SEC".
-  This means the step movement is based on time, not speed, so even if the distance on the workpiece is zero(0), the move time is specified.
+3) 在smov步骤中设置的速度是工作速度。
+  因此，即使定位器移动幅度很大，如果录制的步骤之间在工件上的工作距离非常短，定位器的工作速度可能有效地变为无限(∞)，导致其以最大速度移动。
+  为了在这种情况下限制定位器速度，将速度单位设置为“SEC”。
+  这意味着步骤移动是基于时间，而不是速度，因此即使工件上的距离为零(0)，移动时间也是被指定的。
 <br/><br/>
 
 
-`Example of Programming`
+`编程示例`
 ```py
 
-    S1   move  L,spd=60%,accu=1,tool=0        # Approach start position step
-    S2   smov  S1,L,spd=100mm/s,accu=1,tool=0    # Positioner synchronized linear interpolation
+    S1   move  L,spd=60%,accu=1,tool=0        # 接近起始位置步骤
+    S2   smov  S1,L,spd=100mm/s,accu=1,tool=0    # 定位器同步线性插值
     S3   smov  S1,L,spd=100mm/s,accu=1,tool=0
     S4   smov  S1,L,spd=100mm/s,accu=1,tool=0
-    S5   move  P,spd=10%,accu=1,tool=0        # Retract step (asynchronous with positioner)
+    S5   move  P,spd=10%,accu=1,tool=0        # 收回步骤（与定位器异步）
     S6   move  L,spd=200mm/s,accu=1,tool=0 
     end
 

@@ -1,5 +1,4 @@
-﻿# 4.1 Step Recording
+﻿# 4.1 步骤记录
 
-- In positioner independent jog mode, the program recording condition is set to the move command.
-- In positioner synchronized jog mode, the recording condition is set to the smov command to support positioner synchronized commands.
-
+- 在定位器独立的手动模式下，程序记录条件设置为移动命令。
+- 在定位器同步的手动模式下，记录条件设置为 smov 命令，以支持定位器同步命令。

@@ -1,13 +1,13 @@
-﻿# 3.1 Positioner Independent Jog Mode
+﻿# 3.1 位置器独立操作模式
 
-The independent jog mode is toggled by pressing the "mech." key on the teach pendant. When set to this mode, the positioner can be jogged independently as shown below.
+独立操作模式通过按下教导 pendant 上的 "mech." 按键切换。当设置为此模式时，位置器可以独立操作，如下所示。
 
 <p align="center">
  <img src="../_assets/3_1_1_en.png" width="60%"></img>
- <em><p align="center">Figure 3.1.1. Positioner Independent Jog method</p></em>
+ <em><p align="center">图 3.1.1. 位置器独立操作方法</p></em>
 </p>   
 </br>
 
-- Positioner mechanism: J7 + J8
-- Coordinate system: Axis coordinate system (independent jog)
-- Recording condition: General move command
+- 位置器机制: J7 + J8
+- 坐标系统: 轴坐标系统（独立操作）
+- 记录条件: 一般移动命令
